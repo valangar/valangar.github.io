@@ -6,16 +6,16 @@ d3.bCircles = {};
 // Declare component: (this outer function acts as the closure):
 d3.bCircles.bCirclesModule = function module() {
     // Defaults values:
-    var margin = {top: 10, right: 10, bottom: 20, left: 20},
-        width = 900,
+    var margin = {top: 0, right: 0, bottom: 0, left: 0},
+        width = 1400,
         height = 500,
         svg,
         circles;
 
     function exports(_selection) { // create function to export
         _selection.each(function(_data) { 
-            var num_circles = 200,
-                rect = [50, 50, width - 50, height - 50],
+            var num_circles = 300,
+                rect = [0, 0, width , height ],
                 nodes = [];
 
             //configure the {num_circles} circles
@@ -67,9 +67,11 @@ d3.bCircles.bCirclesModule = function module() {
             feMerge.append("feMergeNode").attr("in","SourceGraphic");
             
             circles.style("filter", "url(#glow)");
+            //window.setInterval(tickActions, 500);
         });
     }// exports end
     function tickActions(e) {
+        console.log("test");
         circles/*. each(gravity(e.alpha))
                 .each(collide(0.5)) */
                 .attr("cx", function(d){ return d.x; })

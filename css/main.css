@@ -12,15 +12,16 @@ html {
     font-weight: 300px;
     color: #333;
 }
+body {
+    margin: 10px 0px 0px 0px;
+}
 #main-container {
-    width: 80%;
     height: 100%;
     margin: auto;
 }
 #main-bundle {
     width: 100%;
     height: 100%;
-    padding: 10px;
 }
 #nav-bar {
     width: 100%;
@@ -39,6 +40,8 @@ html {
     width: 70px; 
     height: 70px;
     padding: 10px 10px 0px 10px;
+    border: 0.5px solid var(--main-teal-light);
+    border-radius: 100%;
     cursor: pointer;
 }
 #nav-bar-sections {
@@ -79,11 +82,28 @@ html {
     display: flex;
     justify-content: center;
 }
+.tab-content-inner {
+    width: 100%;
+    height: 500px;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.attention-seeker {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 700px;
+    line-height: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+}
 #contact-footer {
     width: 100%;
-    height: 80px;
-
-    /*background: linear-gradient(145deg, var(--main-teal) 0%, var(--main-teal-light) 51%, var(--main-teal-lightest) 75%);*/
+    height: 200px;
+    background: linear-gradient(145deg, rgba(0, 219, 219, 0.5) 0%, rgba(0, 180, 180, 0.5) 51%, rgba(0, 220, 220, 0.5) 75%), url("../images/rock_texture.jpg");
+    background-size: cover;
 }
 .hidden {
     display: none;
