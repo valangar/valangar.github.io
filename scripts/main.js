@@ -2,12 +2,12 @@ var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
     tabs = Array.from(document.querySelectorAll(".tabs")),
     logo = document.getElementById("logo"),
     contents = document.getElementById("content-area"),
-    bCircles = d3.bCircles.bCirclesModule();
+    rCircles = d3.rCircles.rCirclesModule();
 
 //Initial setup
 hideAllTabs();
 contents.querySelector('div[data-key=main]').classList.remove("hidden");
-d3.select("#home-pg").call(bCircles);
+d3.select("#home-pg").call(rCircles);
 
 //Adding event listeners
 tabs.forEach(tab => tab.addEventListener("click", switchTabs));
