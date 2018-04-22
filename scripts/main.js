@@ -7,7 +7,10 @@ var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
 //Initial setup
 hideAllTabs();
 contents.querySelector('div[data-key=main]').classList.remove("hidden");
+//creating some circles that are very confused about where they are going:
 d3.select("#home-pg").call(rCircles);
+//creating skills chips
+
 
 //Adding event listeners
 tabs.forEach(tab => tab.addEventListener("click", switchTabs));
