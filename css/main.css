@@ -11,7 +11,7 @@
 }
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300px;
     color: var(--main-black);
 }
@@ -22,9 +22,6 @@ a, #phone{
     font-size: 14px;
     font-style: normal;
     color: var(--main-black);
-}
-p {
-	
 }
 .button {
 	padding: 10px;
@@ -50,43 +47,48 @@ p {
     height: 100%;
 }
 #nav-bar {
-    width: 100%;
-    height: 80px;
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    background-color: var(--main-black);
+    padding: 10px 10px;
 }
 .logo {
-    width: 120px;
-    height: 80px;
     display: flex;
     justify-content: center;
 }
 #logo {
-    width: 70px; 
+    width: 70px;
     height: 70px;
-    padding: 10px 10px 0px 10px;
-    border: 0.5px solid var(--main-teal-light);
-    border-radius: 100%;
     cursor: pointer;
+    font-size: 60px;
+    text-align: center;
+    font-family: courier;
+    font-weight: bolder;
+    color: white;
+    border-bottom: 2px solid var(--main-teal-light);
 }
 #nav-bar-sections {
-    height: 80px;
-    border-bottom: 1px solid var(--main-teal-light);
+    height: 80%;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .tabs {
-    width: 150px;
-    height: 70px;
-    font-size: 16px;
-    color: var(--main-teal);
-    padding: 0px 10px;
+    width: 100%;
+    color: var(--main-white);
+    padding: 30px 10px;
+    font-size: 12px;
     cursor: pointer;
     text-align: center;
-    vertical-align: middle;
-    line-height: 70px;
 }
 .tabs:hover {
     color: var(--main-teal-light);
@@ -96,11 +98,11 @@ p {
     background-color: var(--main-teal-light)
 }
 #content-area {
-    width: 100%;
+    height: 100%;
+    padding-left: 100px;
 }
 .tab-contents {
     width: 100%;
-    min-height: 700px;
 }
 .tab-contents{
     display: flex;
@@ -108,30 +110,60 @@ p {
 }
 #home-pg {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    background: url("../images/shore_bw.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+svg {
+    position: absolute;
+    top: 0px;
 }
 .tab-content-inner {
-    width: 100%;
-    height: 500px;
     z-index: 100;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0px;
+    padding-top: 10px;
 }
 .attention-seeker {
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 7px 50px;
+}
+.name { 
+    font-size: 60px;
     font-weight: bold;
-    text-align: center;
-    width: 700px;
+    color: var(--main-black);
+    font-family: courier;
+}
+.sub-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+.sub-title {
+    font-size: 12px;
+    font-weight: normal;
+}
+.definition {
+    padding: 30px 0px 0px 50px;
     line-height: 2;
-    background-color: rgba(255, 255, 255, 0.8);
+}
+#advertise-self a {
+    font-size: 12px;
+}
+#advertise-self {
 }
 #contact-footer {
     width: 100%;
-    height: 200px;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
     background: linear-gradient(145deg, rgba(0, 219, 219, 0.5) 0%, rgba(0, 180, 180, 0.5) 51%, rgba(0, 220, 220, 0.5) 75%), url("../images/rock_texture.jpg");
     background-size: cover;
 	display: flex;
@@ -157,15 +189,45 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 100px;
 }
 #about-pg {
 	flex-direction: column;
-	margin-top: 30px;
+    margin-left: 15px;
+    
+}
+.resume-sub-titles {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0px;
+    color: var(--main-teal);
+}
+#skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px 0px;
+}
+.chips {
+    padding: 5px;
+    margin: 5px 10px 5px 0px;
+    border: 0.5px solid var(--main-teal);
+    border-radius: 5px;
+    background-color: #00808012;
+}
+.chips span {
+}
+#work-pg {
+    margin-top: 50px;
 }
 #resume {
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+	margin-top: 10px;
 }
 #download {
 	width: 100%;
@@ -173,9 +235,6 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-#resume {
-	margin-top: 10px;
 }
 .work-strip {
     width: 100%;

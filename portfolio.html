@@ -11,13 +11,14 @@
             <div id = "main-bundle">
                 <div id = "nav-bar">
                     <div class = "logo" data-key = "main-tab">
-                        <img id = "logo" src="./images/my-logo.jpg" data-key = "main">
+                        <span id="logo" data-key = "main">VA</span>
                     </div>
                     <div id = "nav-bar-sections">
                         <div class = "tabs" data-key = "about">ABOUT</div>
                         <div class = "tabs" data-key = "work">WORK</div>
                         <div class = "tabs" data-key = "finds">FINDS</div>
                         <div class = "tabs" data-key = "others">EXPERIMENTS</div>
+                        <div class = "tabs" data-key = "contact">CONTACT</div>
                     </div>
                 </div>
                 <div id = "content-area">
@@ -25,8 +26,16 @@
                         <div id = "home-pg">
                             <div class = "tab-content-inner">
                                 <div class = "attention-seeker">
-                                    Visualization developer, pixel enthusiast, and so much more!
-                                    <br> I have 3 years experience working with visualizations, unearthing some very interesting things along the way...</div>
+                                    <span class = "name">Varsha Alangar</span>
+                                    <span class = "sub-name"><span class = "sub-title">( Pronounced )  </span>VARR-shuh AH-lung-garr</span>
+                                    <span class = "definition">
+                                        <ol>
+                                            <li>data visualization developer, pixel enthusiast, and so much more!</li>
+                                            <li>a foodie</li>
+                                            <li>animal lover</li>
+                                        </ol>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -36,13 +45,62 @@
 								<a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé" class="button">Download Résumé</a>
 							</div>
 							<div id = "resume">
-								<embed type="text/html" src="resume.html">
+                                <!-- <embed type="text/html" src="./subHTMLs/resume.html"> -->
+                                <div id = "advertise-self">
+                                    Hi, <br><br>
+                                    I am a visualization developer working with <a href="https://www.acumenllc.com/" target="_blank">Acumen, LLC</a> in Burlingame, California for about 2 years.
+                                    <br><br>
+                                    I enjoy designing visualizations and dashboard solutions and giving them life through the magic of JavaScript. 
+                                    <br>Before moving to California, I graduated with a Master of Science degree in Computing (Graphics and Visualization Track) from the <a href = "https://www.utah.edu/" target="_blank">University of Utah</a>. 
+                                    <br>My liking towards data viz stems from my desire to do two things I have always liked - Computer Science and Art. I like working with pixels and would happily spend hours on them.
+                                    <br>I gain inspiration from the works of <a href="https://bost.ocks.org/mike/" target="_blank">Mike Bostock</a>, <a href="https://www.visualcinnamon.com/" target="_blank">Nadieh Bremer</a>, <a href="http://alignedleft.com/" target="_blank">Scott Murray</a> and many others.
+                                    <br><br>
+                                    I like adventure vacations, going on Hikes, rock climbing (just the indoor kind for now), Kayaking and have recently taken to Skiing! 
+                                    <br>I am passionate about animals, so bonus points to you if you have a dog!
+                                    <br><br>
+                                    I am relatively new to the professional world and would love to learn more and grow each day; so please feel free to contact me for any questions, suggestions or comments you may have.
+                                </div>
+                                <div id = "resume-content">
+                                    <div id = "skills">
+                                        <div class = "resume-sub-titles">SKILLS</div>
+                                        <div class = "skills-row">
+                                            <div class = "chips">JavaScript (
+                                                <span>JQuery</span>, 
+                                                <span>D3.js</span>, 
+                                                <span>Vue.js Framework</span>
+                                                )
+                                            </div>
+                                            <div class = "chips">HTML 5</div>
+                                            <div class = "chips">CSS</div>
+                                            <div class = "chips">Python</div>
+                                            <div class = "chips">OpenGL</div>
+                                            <div class = "chips">GIT</div>
+                                            <div class = "chips">JIRA</div>
+                                            <div class = "chips">Confluence</div>
+                                            <div class = "chips">PostgreSQL</div>
+                                            <div class = "chips">Tableau</div>
+                                            <div class = "chips">Photoshop</div>
+                                            <div class = "chips">Microsoft Visio</div>
+                                            <div class = "chips">Moqups</div>
+                                            <div class = "chips">Visual Studio Code</div>
+                                            <div class = "chips">Sublime</div>
+                                        </div>
+                                    </div>
+                                    <div id = "timeline"></div>
+                                </div>
 							</div>
 						</div>
                     </div>
                     <div class = "tab-contents" data-key = "work">
                         <div id = "work-pg">
-                            <!--<embed work.html>-->
+                            <!-- <embed type="text/html" src="./subHTMLs/work.html"> -->
+                                <img id = "keyboard" class = "screenshot" src = "./images/keyboard.jpg"></img>
+                                <video id = "icg-final-video" class = "screenshot" autoplay loop>
+                                    <source src="./images/icg_final_video.mp4" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
+                                <img id = "ray-tracing-comp" class = "screenshot" src = "./images/ray_tracing_comp.jpg"></img>
+                                <img id = "cartogram" class = "screenshot" src = "./images/cartogram_rect.png"></img>
                         </div>
                     </div>
                     <div class = "tab-contents" data-key = "finds">
@@ -51,25 +109,27 @@
                     <div class = "tab-contents" data-key = "others">
                         
                     </div>
+                    <div class = "tab-contents" data-key = "contact">
+                        <div id = "main-contact">
+                            <div id = "email" class = "contacts"><i class = "far fa-envelope"></i><address><a href="mailto:varsha.alangar@gmail.com">Varsha Alangar</a></address></div>
+                            <div id = "phone" class = "contacts"><i class = "fas fa-mobile-alt"></i>+1 (385) 528-4455</div>
+                        </div>
+                        <div id = "sec-contact">
+                            <div id = "github" class = "contacts"><i class = "fab fa-github"></i><a href="https://github.com/valangar">GitHub</a></div>
+                            <div id = "linkedin" class = "contacts"><i class = "fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/">LinkedIn</a></div>
+                            <div id = "jsfiddle" class = "contacts"><i class = "fab fa-jsfiddle"></i><a href="https://jsfiddle.net/user/valangar/fiddles/">JSFiddle</a></div>
+                            <div id = "stackoverflow" class = "contacts"><i class = "fab fa-stack-overflow"></i><a href="https://stackoverflow.com/users/9604554/valangar?tab=profile">Stack Overflow</a></div>
+                            <div id = "instagram" class = "contacts"><i class = "fab fa-instagram"></i><a href="https://www.instagram.com/varshalangar/?hl=en">Instagram</a></div>
+                            <div id = "twitter" class = "contacts"><i class = "fab fa-twitter"></i><a href="https://twitter.com/varshalangar">Twitter</a></div>
+                        </div>
+                    </div>
                 </div>
-                <div id = "contact-footer">
-					<div id = "main-contact">
-						<div id = "email" class = "contacts"><i class = "far fa-envelope"></i><address><a href="mailto:varsha.alangar@gmail.com">Varsha Alangar</a></address></div>
-						<div id = "phone" class = "contacts"><i class = "fas fa-mobile-alt"></i>+1 (385) 528-4455</div>
-					</div>
-					<div id = "sec-contact">
-						<div id = "github" class = "contacts"><i class = "fab fa-github"></i><a href="https://github.com/valangar">GitHub</a></div>
-						<div id = "linkedin" class = "contacts"><i class = "fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/">LinkedIn</a></div>
-						<div id = "jsfiddle" class = "contacts"><i class = "fab fa-jsfiddle"></i><a href="https://jsfiddle.net/user/valangar/fiddles/">JSFiddle</a></div>
-						<div id = "stackoverflow" class = "contacts"><i class = "fab fa-stack-overflow"></i><a href="https://stackoverflow.com/users/9604554/valangar?tab=profile">Stack Overflow</a></div>
-						<div id = "instagram" class = "contacts"><i class = "fab fa-instagram"></i><a href="https://www.instagram.com/varshalangar/?hl=en">Instagram</a></div>
-						<div id = "twitter" class = "contacts"><i class = "fab fa-twitter"></i><a href="https://twitter.com/varshalangar">Twitter</a></div>
-					</div>
-                </div>
+                
             </div>
         </div>
         <script src = "./libs/d3.min.js"></script>
         <script src = "./libs/jquery.min.js"></script>
+        <script src = "./data/data.js"></script>
         <script src = "./scripts/modules/randomCircles.js"></script>
         <script src = "./scripts/main.js"></script>
     </body>

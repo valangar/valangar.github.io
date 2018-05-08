@@ -7,15 +7,15 @@ d3.rCircles = {};
 d3.rCircles.rCirclesModule = function module() {
     // Defaults values:
     var margin = {top: 0, right: 0, bottom: 0, left: 0},
-        width = 1900,
-        height = 700,
-		radius = 3,
+        width = 1000,
+        height = 1000,
+		radius = 1.2,
         svg,
         circles;
 
     function exports(_selection) { // create function to export
         _selection.each(function(_data) { 
-            var num_circles = 500,
+            var num_circles = 100,
                 data = d3.range(num_circles).map(function() {
 					return {x: width * Math.random(), y: height * Math.random(), dx: Math.random() - 0.5, dy: Math.random() - 0.5};
 				});
