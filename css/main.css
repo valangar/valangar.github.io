@@ -1,4 +1,5 @@
 @import "./randomCircles.css";
+@import "./forceDirGraph.css";
 
 :root {
     --main-teal: #004d4d;
@@ -101,20 +102,18 @@ a, #phone{
     height: 100%;
     padding-left: 100px;
 }
-.tab-contents {
-    width: 100%;
-}
 .tab-contents{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 #home-pg {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background: url("../images/bg/lhouse_green.PNG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,8 +124,6 @@ svg {
 }
 .tab-content-inner {
     z-index: 100;
-    position: absolute;
-    top: 0px;
     padding-top: 10px;
 }
 .attention-seeker {
@@ -134,11 +131,11 @@ svg {
     flex-direction: column;
     text-align: left;
     padding: 7px 50px;
+    color: white;
 }
 .name { 
     font-size: 60px;
     font-weight: bold;
-    color: var(--main-black);
     font-family: courier;
 }
 .sub-name {
@@ -211,13 +208,14 @@ svg {
     flex-wrap: wrap;
     align-items: center;
     margin: 5px 0px;
+    z-index: 100;
 }
 .chips {
     padding: 5px;
     margin: 5px 10px 5px 0px;
     border: 0.5px solid var(--main-teal);
     border-radius: 5px;
-    background-color: #00808012;
+    color: white;
 }
 .chips span {
 }
@@ -250,4 +248,9 @@ svg {
 }
 #icg-final-video {
     width: 200px;
+}
+#network-container {
+    width: 100%;
+    height: 30%;
+    background-color: #333;
 }
