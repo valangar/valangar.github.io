@@ -17,7 +17,6 @@ html {
     color: var(--main-black);
 }
 body {
-    margin: 10px 0px 0px 0px;
 }
 a, #phone{
     font-size: 14px;
@@ -84,7 +83,7 @@ a, #phone{
     justify-content: center;
 }
 .tabs {
-    width: 100%;
+    width: 100px;
     color: var(--main-white);
     padding: 30px 10px;
     font-size: 12px;
@@ -119,8 +118,7 @@ a, #phone{
     background-size: cover;
 }
 svg {
-    position: absolute;
-    top: 0px;
+    
 }
 .tab-content-inner {
     z-index: 100;
@@ -150,10 +148,8 @@ svg {
     padding: 30px 0px 0px 50px;
     line-height: 2;
 }
-#advertise-self a {
+.pg-intro a {
     font-size: 12px;
-}
-#advertise-self {
 }
 #contact-footer {
     width: 100%;

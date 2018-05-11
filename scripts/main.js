@@ -1,5 +1,6 @@
 var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
     tabs = Array.from(document.querySelectorAll(".tabs")),
+tab_width = 100,
     logo = document.getElementById("logo"),
     contents = document.getElementById("content-area"),
     rCircles = d3.rCircles.rCirclesModule()
@@ -10,13 +11,13 @@ var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
 hideAllTabs();
 contents.querySelector('div[data-key=main]').classList.remove("hidden");
 //creating some circles that are very confused about where they are going:
-rCircles.width(screen.width - 100)
+rCircles.width(screen.width - tab_width )
         .height(screen.height);
 d3.select("#home-pg").call(rCircles);
 
 //creating network graph in the contacts page:
-forceGraph.graphSpaceWidth(window.innerWidth)
-			.graphSpaceHeight(window.innerHeight)
+forceGraph.graphSpaceWidth((window.innerWidth / 2) - tab_width )
+			.graphSpaceHeight(window.innerHeight - 100)
 			.nodeColors(d3.scaleOrdinal(d3.schemeCategory20))
 			.dataAttrNodeGrp("group")
 			.dataAttrLinkWeight("value")

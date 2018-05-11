@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
             <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>VAlangar Portfolio</title>
+            <title>Varsha Alangar</title>
             <link rel="stylesheet" href="./css/main.css">
 			<script src = "./css/fontawesome-all.js"></script>
     </head>
@@ -15,9 +15,9 @@
                     </div>
                     <div id = "nav-bar-sections">
                         <div class = "tabs" data-key = "about">ABOUT</div>
-                        <div class = "tabs" data-key = "work">WORK</div>
                         <div class = "tabs" data-key = "skills">SKILLS</div>
-                        <div class = "tabs" data-key = "others">EXPERIMENTS</div>
+                        <div class = "tabs" data-key = "work">WORK</div>
+                        <div class = "tabs" data-key = "others">BLOG POSTS</div>
                         <div class = "tabs" data-key = "contact">CONTACT</div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
 								<a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé" class="button">Download Résumé</a>
 							</div>
 							<div id = "resume">
-                                <div id = "advertise-self">
+                                <div class = "pg-intro">
                                     Hi, <br><br>
                                     I am a visualization developer working with <a href="https://www.acumenllc.com/" target="_blank">Acumen, LLC</a> in Burlingame, California for about 2 years.
                                     <br><br>
@@ -66,8 +66,9 @@
 						</div>
                     </div>
                     <div class = "tab-contents" data-key = "skills">
-                            <div class = "skills-row">
-                                <div class = "chips">JavaScript (
+                            <div class ="pg-intro">This entire portfolio is written in HTML and vanilla JavaScript. All the cool (well, I think they are cool) visualizations including the network graph on this page are written in D3.js. I tried to avoid the use of other libraries and frameworks.</div>
+							<div class = "skills-row">
+                                <!-- <div class = "chips">JavaScript (
                                     <span>JQuery</span>, 
                                     <span>D3.js</span>, 
                                     <span>Vue.js Framework</span>
@@ -86,9 +87,10 @@
                                 <div class = "chips">Microsoft Visio</div>
                                 <div class = "chips">Moqups</div>
                                 <div class = "chips">Visual Studio Code</div>
-                                <div class = "chips">Sublime</div>
+                                <div class = "chips">Sublime</div> -->
                             </div>
                             <div id = "network-container"></div>
+							<div class ="skills-more-info">Click on a skill node to get more info here!</div>
                         </div>
                     <div class = "tab-contents" data-key = "work">
                         <div id = "work-pg">
@@ -106,7 +108,7 @@
                         
                     </div>
                     <div class = "tab-contents" data-key = "contact">
-						<div id = "contact-intro">I am relatively new to the professional world and would love to learn more and grow each day; so please feel free to contact me with any questions, suggestions or comments you may have.</div>
+						<div class = "pg-intro">I am relatively new to the professional world and would love to learn more and grow each day; so please feel free to contact me with any questions, suggestions or comments you may have.</div>
                         <ul class = "contact-list">
                             <li><i class = "far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"></a><b>Varsha Alangar</b></li>
                             <li><i class = "fab fa-github"></i><a href="https://github.com/valangar"></a><b>GitHub</b></li>
