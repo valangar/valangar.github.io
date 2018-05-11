@@ -9,7 +9,7 @@ d3.rCircles.rCirclesModule = function module() {
     var margin = {top: 0, right: 0, bottom: 0, left: 0},
         width = 1000,
         height = 1000,
-		radius = 1.2,
+		radius = 2,
         svg,
         circles;
 
@@ -28,7 +28,10 @@ d3.rCircles.rCirclesModule = function module() {
                             .data(data)
                             .enter()
                             .append("circle")
-                            .attr("r", radius);
+                            .attr("r", radius)
+                            /* .style("fill", function(d, i){
+                                return "rgba(" + getRandomColorValue() + "," + getRandomColorValue() + "," + getRandomColorValue()+ ",0.5)";
+                            }) */;
             
 				
 			d3.timer(function() {
@@ -61,6 +64,11 @@ d3.rCircles.rCirclesModule = function module() {
             circles.style("filter", "url(#glow)");*/
         });
     }// exports end
+    function getRandomColorValue() {
+        let min = 1,
+            max = 256;
+        return Math.random() * (max - min) + min;
+    }
     // Getters and Setters: 
     exports.width = function(_x) {
         if (!arguments.length) return width;

@@ -1,6 +1,6 @@
 var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
     tabs = Array.from(document.querySelectorAll(".tabs")),
-tab_width = 100,
+    tab_width = 100,
     logo = document.getElementById("logo"),
     contents = document.getElementById("content-area"),
     rCircles = d3.rCircles.rCirclesModule()
@@ -40,3 +40,8 @@ function switchTabs (_) {
     this.classList.add("active");
     contents.querySelector('div[data-key=' + data_key + ']').classList.remove("hidden");
 }
+/* $cont = $('p');
+parts = $.map($cont.text().split(''), function(v){
+    return $('<span />', {text:v});
+});
+$cont.empty().append(parts); */
