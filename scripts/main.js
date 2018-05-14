@@ -10,6 +10,8 @@ var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
 //Initial setup
 hideAllTabs();
 contents.querySelector('div[data-key=main]').classList.remove("hidden");
+splitTextIntoSpans(["hello", "my-name", "tag-line"]);
+
 //creating some circles that are very confused about where they are going:
 rCircles.width(screen.width - tab_width )
         .height(screen.height);
@@ -40,8 +42,16 @@ function switchTabs (_) {
     this.classList.add("active");
     contents.querySelector('div[data-key=' + data_key + ']').classList.remove("hidden");
 }
-/* $cont = $('p');
-parts = $.map($cont.text().split(''), function(v){
-    return $('<span />', {text:v});
-});
-$cont.empty().append(parts); */
+function splitTextIntoSpans(_arr) {
+    for(var j in _arr) {
+        console.log(_arr[j]);
+        var ele = document.getElementById(_arr[j]);
+        var text = ele.innerHTML.split('');
+        var split_text = "";
+        for(var i in text){
+            var color = "rgba("+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ")";
+            split_text += "<span style = 'color:"+color+";' >"+ text[i] +"</span>";
+        }
+        ele.innerHTML = split_text;
+    }
+}
