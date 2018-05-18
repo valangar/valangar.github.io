@@ -1,6 +1,7 @@
 var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
     tabs = Array.from(document.querySelectorAll(".tabs")),
     tab_width = 100,
+    tab_ids = ["home-pg", "about-pg", "skills-pg", "work-pg", "blog-pg", "contact-pg"];
     logo = document.getElementById("logo"),
     contents = document.getElementById("content-area"),
     rCircles = d3.rCircles.rCirclesModule()
@@ -9,7 +10,6 @@ var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
 	
 //Initial setup
 hideAllTabs();
-/* contents.querySelector('div[data-key=main]').classList.remove("hidden"); */
 splitTextIntoSpans(["hello", "my-name", "tag-line"]);
 d3.select(".logo").on("mouseover", function(){
                         d3.select("#logo-text").classed("hidden", false);
@@ -18,7 +18,19 @@ d3.select(".logo").on("mouseover", function(){
                     .on("mouseout", function(){
                         d3.select("#logo-text").classed("hidden", true);
                         d3.select("#logo").classed("hidden", false);
-                    })
+                    });
+d3.selectAll(".tabs").on("click", function(d, i){
+    $('html, body').animate({
+        scrollTop: $("#"+tab_ids[i]).offset().top},
+        'slow');
+})
+d3.selectAll(".split-text").on("mouseover", function(){
+    var color = "rgba("+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ")";
+    d3.select(this).style("color", color);    
+})
+.on("mouseout", function(){
+    d3.select(this).style("color", "#333");    
+});
 //creating some circles that are very confused about where they are going:
 /* rCircles.width(screen.width - tab_width - 40)
         .height(screen.height - 100);
@@ -40,24 +52,20 @@ logo.addEventListener("click", switchTabs);
 
 /************************* FUNCTIONS *****************************/
 function hideAllTabs() {
-    /* tab_content.forEach(tab => tab.classList.add("hidden")); */
     tabs.forEach(tab => tab.classList.remove("active"));
 }
 function switchTabs (_) {
     var data_key = _.target.getAttribute("data-key");
     hideAllTabs();
     this.classList.add("active");
-    /* contents.querySelector('div[data-key=' + data_key + ']').classList.remove("hidden"); */
 }
 function splitTextIntoSpans(_arr) {
     for(var j in _arr) {
-        console.log(_arr[j]);
         var ele = document.getElementById(_arr[j]);
         var text = ele.innerHTML.split('');
         var split_text = "";
         for(var i in text){
-            var color = "rgba("+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ")";
-            split_text += "<span style = 'color:"+color+";' >"+ text[i] +"</span>";
+            split_text += "<span class = 'split-text' >"+ text[i] +"</span>";
         }
         ele.innerHTML = split_text;
     }
