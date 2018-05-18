@@ -18,6 +18,10 @@ html {
 }
 body {
 }
+.main-g {
+    width: 40px;
+    height: 40px;
+}
 .name span:hover{
     color: var(--main-teal-light);
     transform: scale(2);
@@ -64,11 +68,7 @@ a, #phone{
     background-color: var(--main-black);
     padding: 10px 10px;
 }
-.logo {
-    display: flex;
-    justify-content: center;
-}
-#logo {
+#logo-text {
     width: 70px;
     height: 70px;
     cursor: pointer;
@@ -78,6 +78,10 @@ a, #phone{
     font-weight: bolder;
     color: white;
     border-bottom: 2px solid var(--main-teal-light);
+}
+#logo {
+    width: 70px;
+    height: 70px;
 }
 #nav-bar-sections {
     height: 80%;
@@ -104,6 +108,7 @@ a, #phone{
 #content-area {
     height: 100%;
     padding-left: 100px;
+    background-color: #c0c0c0;
 }
 .tab-contents{
     display: flex;
@@ -119,9 +124,8 @@ a, #phone{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 20px;
+    background-color: var(--main-white);
 }
 svg {
     position: absolute;

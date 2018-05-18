@@ -9,13 +9,20 @@ var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
 	
 //Initial setup
 hideAllTabs();
-contents.querySelector('div[data-key=main]').classList.remove("hidden");
+/* contents.querySelector('div[data-key=main]').classList.remove("hidden"); */
 splitTextIntoSpans(["hello", "my-name", "tag-line"]);
-
+d3.select(".logo").on("mouseover", function(){
+                        d3.select("#logo-text").classed("hidden", false);
+                        d3.select("#logo").classed("hidden", true);
+                    })
+                    .on("mouseout", function(){
+                        d3.select("#logo-text").classed("hidden", true);
+                        d3.select("#logo").classed("hidden", false);
+                    })
 //creating some circles that are very confused about where they are going:
-rCircles.width(screen.width - tab_width )
-        .height(screen.height);
-d3.select("#home-pg").call(rCircles);
+/* rCircles.width(screen.width - tab_width - 40)
+        .height(screen.height - 100);
+d3.select("#home-pg").call(rCircles); */
 
 //creating network graph in the contacts page:
 forceGraph.graphSpaceWidth((window.innerWidth / 2) - tab_width )
@@ -33,14 +40,14 @@ logo.addEventListener("click", switchTabs);
 
 /************************* FUNCTIONS *****************************/
 function hideAllTabs() {
-    tab_content.forEach(tab => tab.classList.add("hidden"));
+    /* tab_content.forEach(tab => tab.classList.add("hidden")); */
     tabs.forEach(tab => tab.classList.remove("active"));
 }
 function switchTabs (_) {
     var data_key = _.target.getAttribute("data-key");
     hideAllTabs();
     this.classList.add("active");
-    contents.querySelector('div[data-key=' + data_key + ']').classList.remove("hidden");
+    /* contents.querySelector('div[data-key=' + data_key + ']').classList.remove("hidden"); */
 }
 function splitTextIntoSpans(_arr) {
     for(var j in _arr) {
