@@ -175,13 +175,16 @@ svg {
 .sub-name {
     font-size: 14px;
     font-weight: bold;
+	display: flex;
 }
 .sub-title {
     font-size: 12px;
     font-weight: normal;
+	padding-right: 5px;
 }
 .definition {
     font-size: 40px;
+	color: var(--main-teal);
 }
 .pg-intro a {
     font-size: 12px;
