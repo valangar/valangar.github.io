@@ -16,6 +16,9 @@ html {
     font-weight: 300px;
     color: var(--main-black);
 }
+body {
+	margin: 0px 8px;
+}
 .main-g {
     width: 40px;
     height: 40px;
@@ -118,13 +121,11 @@ a, #phone{
     background-color: var(--main-teal-light)
 }
 #content-area {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 80px;
     background-color: #c0c0c0;
 }
 .tab-contents{
@@ -141,7 +142,6 @@ a, #phone{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 20px;
     background-color: var(--main-white);
     background-image: url("../images/bg/shore_green.PNG") ;
     background-size: cover;
@@ -175,7 +175,7 @@ svg {
 .sub-name {
     font-size: 14px;
     font-weight: bold;
-    display: flex;
+	display: flex;
 }
 .sub-title {
     font-size: 12px;
