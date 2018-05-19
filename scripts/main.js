@@ -1,7 +1,7 @@
 var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
     tabs = Array.from(document.querySelectorAll(".tabs")),
     tab_width = 100,
-    tab_ids = ["home-pg", "about-pg", "skills-pg", "work-pg", "blog-pg", "contact-pg"];
+    tab_ids = ["about-pg", "skills-pg", "work-pg", "contact-pg"];
     logo = document.getElementById("logo"),
     contents = document.getElementById("content-area"),
     rCircles = d3.rCircles.rCirclesModule()
@@ -10,7 +10,7 @@ var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
 	
 //Initial setup
 hideAllTabs();
-splitTextIntoSpans(["hello", "my-name", "tag-line"]);
+splitTextIntoSpans(["hello", "my-name"]);
 d3.select(".logo").on("mouseover", function(){
                         d3.select("#logo-text").classed("hidden", false);
                         d3.select("#logo").classed("hidden", true);

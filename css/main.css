@@ -91,9 +91,9 @@ a, #phone{
 .logo-spin {
     animation: spin 4s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
 
 #nav-bar-sections {
     height: 80%;
@@ -133,7 +133,7 @@ a, #phone{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 #home-pg {
     width: 100%;
@@ -175,13 +175,16 @@ svg {
 .sub-name {
     font-size: 14px;
     font-weight: bold;
+    display: flex;
 }
 .sub-title {
     font-size: 12px;
     font-weight: normal;
+    padding-right: 5px;
 }
 .definition {
     font-size: 40px;
+    color: var(--main-teal-light);
 }
 .pg-intro a {
     font-size: 12px;
@@ -220,7 +223,7 @@ svg {
 }
 #about-pg {
 	flex-direction: column;
-    margin-left: 15px;
+    margin: 15px;
     
 }
 .resume-sub-titles {
