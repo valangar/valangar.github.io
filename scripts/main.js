@@ -1,7 +1,7 @@
 var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
     tabs = Array.from(document.querySelectorAll(".tabs")),
     tab_width = 100,
-    tab_ids = ["about-pg", "skills-pg", "work-pg", "contact-pg"];
+    tab_ids = ["home-pg", "about-pg", "skills-pg", "work-pg", "contact-pg"];
     logo = document.getElementById("logo"),
     contents = document.getElementById("content-area"),
     rCircles = d3.rCircles.rCirclesModule()
@@ -19,7 +19,7 @@ d3.select(".logo").on("mouseover", function(){
                         d3.select("#logo-text").classed("hidden", true);
                         d3.select("#logo").classed("hidden", false);
                     });
-d3.selectAll(".tabs").on("click", function(d, i){
+d3.selectAll(".section").on("click", function(d, i){
     $('html, body').animate({
         scrollTop: $("#"+tab_ids[i]).offset().top},
         'slow');
