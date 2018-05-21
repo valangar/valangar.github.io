@@ -1,6 +1,3 @@
-@import "./randomCircles.css";
-@import "./forceDirGraph.css";
-
 :root {
     --main-teal: #004d4d;
     --main-teal-light: #00b3b3;
@@ -46,6 +43,47 @@ a, #phone{
 }
 .hidden {
     display: none !important;
+}
+li {
+    overflow: hidden;
+    background: #ddd;
+    list-style: none;
+    white-space: nowrap;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 20px;
+}
+li a {
+	opacity: 0;
+	color: #666;
+	max-width: 0;
+	display: inline-block;
+	text-decoration: none;
+	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color;
+}
+li a:hover {
+	color: var(--main-teal-light);
+}
+li a b {
+	float:right;
+	display: block;
+	padding-right: 1em;
+	font:1em/1 'rokkitt', sans-serif;
+}
+li i {
+	color: var(--main-teal-light);
+	line-height:1;
+	font-size: 25px;
+	display: inline-block;
+	padding:.150em .400em;
+}
+li:hover {}
+li:hover a {
+	opacity: 1;
+	max-width: 200px;
+	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
 }
 #main-container {
     height: 100%;
@@ -145,10 +183,6 @@ a, #phone{
     background-color: var(--main-white);
     background-image: url("../images/bg/shore_green.PNG") ;
     background-size: cover;
-}
-svg {
-    position: absolute;
-    left: 80;
 }
 .tab-content-inner {
     z-index: 100;
@@ -285,4 +319,43 @@ svg {
     width: 100%;
     height: 30%;
     background-color: #333;
+}
+#contact-tab-content {
+	justify-content: center;
+    align-items: center;
+}
+#contact-info {
+	display: flex;
+    justify-content: space-between;
+}
+#contact-pg {
+	padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 800px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.contact-list {
+	max-width: 50px;
+}
+#contact-logo {
+	padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.contact-logo {
+	width: 215px;
+	height: 215px;
+}
+.contact-name {
+	padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: courier;
+    color: #33333333;
+    cursor: default;
 }

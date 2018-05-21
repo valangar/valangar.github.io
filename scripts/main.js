@@ -11,26 +11,7 @@ var tab_content = Array.from(document.querySelectorAll(".tab-contents")),
 //Initial setup
 hideAllTabs();
 splitTextIntoSpans(["hello", "my-name"]);
-d3.select(".logo").on("mouseover", function(){
-                        d3.select("#logo-text").classed("hidden", false);
-                        d3.select("#logo").classed("hidden", true);
-                    })
-                    .on("mouseout", function(){
-                        d3.select("#logo-text").classed("hidden", true);
-                        d3.select("#logo").classed("hidden", false);
-                    });
-d3.selectAll(".section").on("click", function(d, i){
-    $('html, body').animate({
-        scrollTop: $("#"+tab_ids[i]).offset().top},
-        'slow');
-})
-d3.selectAll(".split-text").on("mouseover", function(){
-    var color = "rgba("+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ")";
-    d3.select(this).style("color", color);    
-})
-.on("mouseout", function(){
-    d3.select(this).style("color", "#333");    
-});
+
 //creating some circles that are very confused about where they are going:
 /* rCircles.width(screen.width - tab_width - 40)
         .height(screen.height - 100);
@@ -49,6 +30,26 @@ d3.select("#network-container").datum(graph_data).call(forceGraph);
 //Adding event listeners
 tabs.forEach(tab => tab.addEventListener("click", switchTabs));
 logo.addEventListener("click", switchTabs);
+d3.select(".logo").on("mouseover", function(){
+                        d3.select("#logo-text").classed("hidden", false);
+                        d3.select("#logo").classed("hidden", true);
+                    })
+                    .on("mouseout", function(){
+                        d3.select("#logo-text").classed("hidden", true);
+                        d3.select("#logo").classed("hidden", false);
+                    });
+d3.selectAll(".section").on("click", function(d, i){
+    $('html, body').animate({
+        scrollTop: $("#"+tab_ids[i]).offset().top},
+        'slow');
+})
+d3.selectAll(".split-text").on("mouseover", function(){
+								var color = "rgba("+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ")";
+								d3.select(this).style("color", color);    
+							})
+							.on("mouseout", function(){
+								d3.select(this).style("color", "#333");    
+							});
 
 /************************* FUNCTIONS *****************************/
 function hideAllTabs() {
