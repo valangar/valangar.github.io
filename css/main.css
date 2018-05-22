@@ -85,14 +85,23 @@ li:hover a {
 	max-width: 200px;
 	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
 }
-.li-top1, .li-bot3 {
-	margin-left: 199px;
+.li-top1{
+	margin-left: 99px;
 }
-.li-top2, .li-bot2 {
-	margin-left: 133px;
+.li-top2{
+	margin-left: 166px;
 }
-.li-top3, .li-bot1 {
-	margin-left: 66px;
+.li-top3 {
+	margin-left: 231px;
+}
+.li-bot3 {
+	
+}
+.li-bot2 {
+	
+}
+.li-bot1 {
+	
 }
 #main-container {
     height: 100%;
@@ -182,6 +191,8 @@ li:hover a {
     align-items: center;
     width: 100%;
     height: 100vh;
+	background-image: url(../images/bg/paper_bg.png);
+    background-size: cover;
 }
 #home-pg {
     width: 100%;
@@ -331,22 +342,28 @@ li:hover a {
 }
 #contact-tab-content {
 	justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 #contact-info {
 	display: flex;
     justify-content: space-around;
+	align-items: center;
 }
 #contact-pg {
 	padding: 30px;
     display: flex;
     flex-direction: column;
-    background-color: white;
     width: 800px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: white; */
 }
 .contact-list {
-	max-width: 50px;
+	max-width: 100px;
+	padding: 0px;
+    text-align: center;
+}
+.contact-list-bottom {
+	margin-bottom: 70px;
 }
 #contact-logo {
 	padding: 0px 50px;
@@ -359,6 +376,7 @@ li:hover a {
 .contact-logo {
 	width: 215px;
 	height: 215px;
+	margin: 50px 0px;
 }
 .contact-name {
 	padding: 20px;
