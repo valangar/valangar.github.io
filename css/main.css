@@ -85,6 +85,15 @@ li:hover a {
 	max-width: 200px;
 	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
 }
+.li-top1, .li-bot3 {
+	margin-left: 199px;
+}
+.li-top2, .li-bot2 {
+	margin-left: 133px;
+}
+.li-top3, .li-bot1 {
+	margin-left: 66px;
+}
 #main-container {
     height: 100%;
     margin: auto;
@@ -326,7 +335,7 @@ li:hover a {
 }
 #contact-info {
 	display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #contact-pg {
 	padding: 30px;
@@ -340,7 +349,7 @@ li:hover a {
 	max-width: 50px;
 }
 #contact-logo {
-	padding-right: 50px;
+	padding: 0px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
