@@ -16,6 +16,10 @@ html {
 body {
 	margin: 0px 8px;
 }
+.change-font {
+	font-family: courier;
+    font-weight: bolder;
+}
 .main-g {
     width: 40px;
     height: 40px;
@@ -40,6 +44,10 @@ a, #phone{
 }
 .button:hover {
 	background: linear-gradient(to bottom, #f5f5f5 0%, #d3d3d3 100%);
+}
+.card-look {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: white;
 }
 .hidden {
     display: none !important;
@@ -85,6 +93,24 @@ li:hover a {
 	max-width: 200px;
 	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
 }
+.li-top1{
+	margin-left: 99px;
+}
+.li-top2{
+	margin-left: 166px;
+}
+.li-top3 {
+	margin-left: 231px;
+}
+.li-bot3 {
+	
+}
+.li-bot2 {
+	
+}
+.li-bot1 {
+	
+}
 #main-container {
     height: 100%;
     margin: auto;
@@ -120,8 +146,6 @@ li:hover a {
     cursor: pointer;
     font-size: 60px;
     text-align: center;
-    font-family: courier;
-    font-weight: bolder;
     color: white;
     border-bottom: 2px solid var(--main-teal-light);
 }
@@ -158,6 +182,9 @@ li:hover a {
     color: var(--main-white);
     background-color: var(--main-teal-light)
 }
+.tab-icons {
+	font-size: 30px;
+}
 #content-area {
     display: flex;
     flex-direction: column;
@@ -170,18 +197,22 @@ li:hover a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     width: 100%;
     height: 100vh;
+}
+.pg-title {
+	color: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+    padding: 10px 50px;
 }
 #home-pg {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: var(--main-white);
-    background-image: url("../images/bg/shore_green.PNG") ;
+    background-image: url("../images/bg/biking.png");
     background-size: cover;
 }
 .tab-content-inner {
@@ -192,8 +223,9 @@ li:hover a {
 .attention-seeker {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: right;
     padding: 7px 50px;
+    width: 800px;
 }
 .split-text{
     transition: all 0.07s ease;
@@ -209,7 +241,8 @@ li:hover a {
 .sub-name {
     font-size: 14px;
     font-weight: bold;
-	display: flex;
+    display: flex;
+    justify-content: flex-end;
 }
 .sub-title {
     font-size: 12px;
@@ -226,18 +259,20 @@ li:hover a {
 .pg-intro {
     padding: 20px;
     text-align: justify;
+    width: 800px;
+    margin: 20px auto 20px auto;
 }
-#contact-footer {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    bottom: 0px;
-    z-index: 1000;
-    background: linear-gradient(145deg, rgba(0, 219, 219, 0.5) 0%, rgba(0, 180, 180, 0.5) 51%, rgba(0, 220, 220, 0.5) 75%), url("../images/rock_texture.jpg");
-    background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+#about-pg, .skills-pg {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#timeline-container {
+    height: 400px;
+    margin: 0px 50px 50px 50px;
 }
 #main-contact, #sec-contact {
 	display: flex;
@@ -248,21 +283,10 @@ li:hover a {
     display:flex;
     align-items: center;
 }
-.svg-inline--fa {
+.contact-icons  {
     padding: 0px 10px;
     font-size: large;
     color: var(--main-black);
-}
-#work-pg, #about-pg {
-    width: 800px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#about-pg {
-	flex-direction: column;
-    margin: 15px;
-    
 }
 .resume-sub-titles {
     font-size: 16px;
@@ -274,13 +298,6 @@ li:hover a {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-}
-.skills-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 5px 0px;
-    z-index: 100;
 }
 .chips {
     padding: 5px;
@@ -298,11 +315,11 @@ li:hover a {
 	margin-top: 10px;
 }
 #download {
-	width: 100%;
-	height: 60px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 10px 50px;
+    display: flex;
+    align-items: center;
 }
 .work-strip {
     width: 100%;
@@ -326,35 +343,42 @@ li:hover a {
 }
 #contact-tab-content {
 	justify-content: center;
-    align-items: center;
 }
 #contact-info {
 	display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
 }
 #contact-pg {
-	padding: 30px;
+    padding: 30px;
+    margin: 20px auto auto auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
     width: 800px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#contact-list {
+    display: flex;
+    justify-content: center;
 }
 .contact-list {
-	max-width: 50px;
+	max-width: 100px;
+	padding: 0px;
+    text-align: center;
+}
+.contact-list-bottom {
+    margin: 0px 50px 70px 50px;
 }
 #contact-logo {
-    width: 500px;
-	padding-right: 50px;
+    padding-right: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-	align-items: center;
-	text-align: center;
+    align-items: center;
+    text-align: center;
 }
 .contact-logo {
 	width: 215px;
 	height: 215px;
+	margin: 50px 0px;
 }
 .contact-name {
 	padding: 20px;
@@ -363,4 +387,30 @@ li:hover a {
     font-family: courier;
     color: #33333333;
     cursor: default;
+}
+.diamond {
+	width: 100px;
+	height: 100px;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.diamond:hover {
+    background-color: var(--main-teal-light);
+}
+.diamond-text {
+	transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+}
+.skill-icons {
+    font-size: 40px;
+}
+.skills-more-info {
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
 }
