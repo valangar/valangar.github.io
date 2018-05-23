@@ -223,6 +223,10 @@ li:hover a {
 .pg-intro a {
     font-size: 12px;
 }
+.pg-intro {
+    padding: 20px;
+    text-align: justify;
+}
 #contact-footer {
     width: 100%;
     height: 100px;
@@ -340,6 +344,7 @@ li:hover a {
 	max-width: 50px;
 }
 #contact-logo {
+    width: 500px;
 	padding-right: 50px;
     display: flex;
     flex-direction: column;
