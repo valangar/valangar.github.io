@@ -12,15 +12,15 @@
             <div id = "main-bundle">
                 <div id = "nav-bar">
                     <div class = "section logo" data-key = "main">
-                        <span id="logo-text" data-key = "main" class = "hidden" >VA</span>
+                        <span id="logo-text" data-key = "main" class = "hidden change-font" >VA</span>
                         <img id = "logo" class = "logo-spin"  src = "./images/va_logo_rev.png"/>
                     </div>
                     <div id = "nav-bar-sections">
-                        <div class = "section tabs" data-key = "about">ABOUT</div>
-                        <div class = "section tabs" data-key = "skills">SKILLS</div>
-                        <div class = "section tabs" data-key = "work">WORK</div>
-                        <!-- <div class = "tabs" data-key = "others">BLOG POSTS</div> -->
-                        <div class = "section tabs" data-key = "contact">CONTACT</div>
+                        <div class = "section tabs" data-key = "about"><i class="tab-icons far fa-user-circle"></i></div>
+                        <div class = "section tabs" data-key = "skills"><i class="tab-icons fas fa-cogs"></i></div>
+                        <div class = "section tabs" data-key = "work"><i class="tab-icons fas fa-desktop"></i></div>
+                        <!-- <div class = "tabs" data-key = "others"><i class="tab-icons fas fa-pencil-alt"></i>BLOG POSTS</div> -->
+                        <div class = "section tabs" data-key = "contact"><i class="tab-icons far fa-envelope"></i></div>
                     </div>
                 </div>
                 <div id = "content-area">
@@ -28,16 +28,18 @@
                         <div id = "home-pg">
                             <div class = "tab-content-inner">
                                 <div class = "attention-seeker">
-                                    <div id = "hello" class = "name">Hi there!</div>
-                                    <div id = "my-name" class = "name">I'm Varsha Alangar</div>
+                                    <div id = "hello" class = "name change-font">Hi there!</div>
+                                    <div id = "my-name" class = "name change-font">I'm Varsha Alangar</div>
                                     <div id = "pronounciation" class = "sub-name"><div class = "sub-title">Pronounced:  </div>VARR-shuh AH-lung-garr</div>
-                                    <div id = "tag-line" class = "definition">Visualization Developer adding color to code...</div>
+                                    <div id = "tag-line" class = "definition change-font">Visualization Developer adding color to code...</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class = "tab-contents" data-key = "about">
                         <div id = "about-pg">
+							<div class = "change-font pg-title">About</div>
+						
 							<div id = "download">
 								<a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé" class="button">Download Résumé</a>
 							</div>
@@ -63,6 +65,7 @@
                     </div>
                     <div class = "tab-contents" data-key = "skills">
                         <div id = "skills-pg">
+							<div class = "change-font pg-title">Skills</div>
                             <div class ="pg-intro">This entire portfolio is written in HTML and vanilla JavaScript. All the cool (well, I think they are cool) visualizations including the network graph on this page are written in D3.js. I tried to avoid the use of other libraries and frameworks.</div>
 							<div class = "skills-row">
                                 <!-- <div class = "chips">JavaScript (
@@ -92,6 +95,7 @@
                     </div>
                     <div class = "tab-contents" data-key = "work">
                         <div id = "work-pg">
+								<div class = "change-font pg-title">Work</div>
                                 <img id = "keyboard" class = "screenshot" src = "./images/work/keyboard.jpg"></img>
                                 <video id = "icg-final-video" class = "screenshot" autoplay loop>
                                     <source src="./images/work/icg_final_video.mp4" type="video/mp4">
@@ -107,23 +111,24 @@
                     </div> -->
                     <div class = "tab-contents" id="contact-tab-content" data-key = "contact">
                         <div id = "contact-pg">
+							<div class = "change-font pg-title">Contact</div>
                             <div class = "pg-intro">I am relatively new to the professional world and would love to learn more and grow each day; so please feel free to contact me with any questions, suggestions or comments you may have.</div>
 							<div id = "contact-info">
 								<ul class = "contact-list contact-list-bottom">
-									<li class="li-top1"><i class = "far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
-									<li class="li-top2"><i class = "fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
-									<li class="li-top3"><i class = "fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
+									<li class="li-top1"><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
+									<li class="li-top2"><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
+									<li class="li-top3"><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
 								</ul>
 								<div id = "contact-logo">
 									<img class = "contact-logo"  src = "./images/va_logo.png"/>
 									<ul class = "contact-list">
-										<li class="li-mid"><i class = "fab fa-jsfiddle"></i><a href="https://jsfiddle.net/user/valangar/fiddles/"><b>JSFiddle</b></a></li>
+										<li class="li-mid"><i class = "contact-icons fab fa-jsfiddle"></i><a href="https://jsfiddle.net/user/valangar/fiddles/"><b>JSFiddle</b></a></li>
 									</ul>
 								</div>
 								<ul class = "contact-list contact-list-bottom">
-									<li class="li-bot1"><i class = "fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
-									<li class="li-bot2"><i class = "fab fa-stack-overflow"></i><a href="https://stackoverflow.com/users/9604554/valangar?tab=profile"><b>Stack Overflow</b></a></li>
-									<li class="li-bot3"><i class = "fab fa-instagram"></i><a href="https://www.instagram.com/varshalangar/?hl=en"><b>Instagram</b></a></li>
+									<li class="li-bot1"><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
+									<li class="li-bot2"><i class = "contact-icons fab fa-stack-overflow"></i><a href="https://stackoverflow.com/users/9604554/valangar?tab=profile"><b>Stack Overflow</b></a></li>
+									<li class="li-bot3"><i class = "contact-icons fab fa-instagram"></i><a href="https://www.instagram.com/varshalangar/?hl=en"><b>Instagram</b></a></li>
 									<!-- <div class="contact-name">Varsha Alangar</div> -->
 								</ul>
 							</div>

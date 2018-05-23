@@ -16,6 +16,10 @@ html {
 body {
 	margin: 0px 8px;
 }
+.change-font {
+	font-family: courier;
+    font-weight: bolder;
+}
 .main-g {
     width: 40px;
     height: 40px;
@@ -138,8 +142,6 @@ li:hover a {
     cursor: pointer;
     font-size: 60px;
     text-align: center;
-    font-family: courier;
-    font-weight: bolder;
     color: white;
     border-bottom: 2px solid var(--main-teal-light);
 }
@@ -176,6 +178,9 @@ li:hover a {
     color: var(--main-white);
     background-color: var(--main-teal-light)
 }
+.tab-icons {
+	font-size: 30px;
+}
 #content-area {
     display: flex;
     flex-direction: column;
@@ -193,6 +198,10 @@ li:hover a {
     height: 100vh;
 	background-image: url(../images/bg/paper_bg.png);
     background-size: cover;
+}
+.pg-title {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 40px;
 }
 #home-pg {
     width: 100%;
@@ -264,7 +273,7 @@ li:hover a {
     display:flex;
     align-items: center;
 }
-.svg-inline--fa {
+.contact-icons  {
     padding: 0px 10px;
     font-size: large;
     color: var(--main-black);
