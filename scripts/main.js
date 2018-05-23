@@ -18,14 +18,14 @@ splitTextIntoSpans(["hello", "my-name"]);
 d3.select("#home-pg").call(rCircles); */
 
 //creating network graph in the contacts page:
-forceGraph.graphSpaceWidth((window.innerWidth / 2) - tab_width )
+/* forceGraph.graphSpaceWidth((window.innerWidth / 2) - tab_width )
 			.graphSpaceHeight(window.innerHeight - 100)
 			.nodeColors(d3.scaleOrdinal(d3.schemeCategory20))
 			.dataAttrNodeGrp("group")
 			.dataAttrLinkWeight("value")
 			.dataAttrNodeText("name")
 			.dataAttrNodeSize("nodesize");
-d3.select("#network-container").datum(graph_data).call(forceGraph);
+d3.select("#network-container").datum(graph_data).call(forceGraph); */
 
 //Adding event listeners
 tabs.forEach(tab => tab.addEventListener("click", switchTabs));
