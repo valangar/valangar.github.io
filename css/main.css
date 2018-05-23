@@ -212,7 +212,7 @@ li:hover a {
     align-items: flex-start;
     justify-content: flex-end;
     background-color: var(--main-white);
-    background-image: url("../images/bg/biking.png");
+    background-image: url("../images/bg/monterey.png");
     background-size: cover;
 }
 .tab-content-inner {
