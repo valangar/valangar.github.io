@@ -25,7 +25,7 @@
                 </div>
                 <div id = "content-area">
                     <div class = "tab-contents" data-key = "main">
-                        <div id = "home-pg">
+                        <div class = "pg-contents" id = "home-pg">
                             <div class = "tab-content-inner">
                                 <div class = "attention-seeker">
                                     <div id = "hello" class = "name change-font">Hi there!</div>
@@ -37,6 +37,7 @@
                         </div>
                     </div>
                     <div class = "tab-contents" id = "about-tab-content" data-key = "about">
+                        <div class = "pg-contents">
                             <div class = "change-font pg-title">About</div>
                             <div id = "download">
                                 <a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé" class="button">Download Résumé</a>
@@ -58,9 +59,10 @@
                             <div id = "timeline-container" class = "card-look">
                                 <div id = "timeline"></div>
                             </div>
+                        </div>
                     </div>
                     <div class = "tab-contents" data-key = "skills">
-                        <div id = "skills-tab-content">
+                        <div id = "skills-tab-content" class = "pg-contents">
 							<div class = "change-font pg-title">Skills</div>
 							<div class = "skills-pg">
                                 <div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons-big" src="./images/icons/Javascript.png"/></div></div>
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                     <div class = "tab-contents" data-key = "work">
-                        <div id = "work-pg">
+                        <div id = "work-pg" class = "pg-contents">
 								<div class = "change-font pg-title">Work</div>
                                 <img id = "keyboard" class = "screenshot" src = "./images/work/keyboard.jpg"></img>
                                 <video id = "icg-final-video" class = "screenshot" autoplay loop>
@@ -97,31 +99,35 @@
                     </div>
                     
                     <div class = "tab-contents" id="blog-tab-content"  data-key = "blog">
+                        <div class = "pg-contents">
                             <div class = "change-font pg-title">Blog Posts</div>
                             <div id = "blog-pg"></div>
+                        </div>
                     </div>
                     <div class = "tab-contents" id="contact-tab-content" data-key = "contact">
-                        <div class = "change-font pg-title">Contact</div>
-                        <div class = "pg-intro">I am relatively new to the professional world and would love to learn more and grow each day; so please feel free to contact me with any questions, suggestions or comments you may have.</div>
-                        <div id = "contact-pg" class = "card-look" >
-							<div id = "contact-info">
-                                <div id = "contact-logo">
-                                    <img class = "contact-logo"  src = "./images/va_logo.png"/>
-                                    <div class="contact-name">Varsha Alangar</div>
+                        <div class = "pg-contents">
+                            <div class = "change-font pg-title">Contact</div>
+                            <div class = "pg-intro">I am relatively new to the professional world and would love to learn more and grow each day; so please feel free to contact me with any questions, suggestions or comments you may have.</div>
+                            <div id = "contact-pg" class = "card-look" >
+                                <div id = "contact-info">
+                                    <div id = "contact-logo">
+                                        <img class = "contact-logo"  src = "./images/va_logo.png"/>
+                                        <div class="contact-name">Varsha Alangar</div>
+                                    </div>
+                                    <div id = "contact-list">
+                                        <ul class = "contact-list contact-list-bottom">
+                                            <li><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
+                                            <li><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
+                                            <li><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
+                                        </ul>
+                                        <ul  class = "contact-list contact-list-bottom">
+                                                <li><i class = "contact-icons fab fa-jsfiddle"></i><a href="https://jsfiddle.net/user/valangar/fiddles/"><b>JSFiddle</b></a></li>
+                                                <li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
+                                                <li><i class = "contact-icons fab fa-instagram"></i><a href="https://www.instagram.com/varshalangar/?hl=en"><b>Instagram</b></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div id = "contact-list">
-                                    <ul class = "contact-list contact-list-bottom">
-                                        <li><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
-                                        <li><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
-                                        <li><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
-                                    </ul>
-                                    <ul  class = "contact-list contact-list-bottom">
-                                            <li><i class = "contact-icons fab fa-jsfiddle"></i><a href="https://jsfiddle.net/user/valangar/fiddles/"><b>JSFiddle</b></a></li>
-                                            <li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
-                                            <li><i class = "contact-icons fab fa-instagram"></i><a href="https://www.instagram.com/varshalangar/?hl=en"><b>Instagram</b></a></li>
-                                    </ul>
-                                </div>
-							</div>
+                            </div>
                         </div>
                     </div>
                 </div>

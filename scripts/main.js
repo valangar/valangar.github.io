@@ -48,7 +48,7 @@ d3.selectAll(".split-text").on("mouseover", function(){
 								d3.select(this).style("color", color);    
 							})
 							.on("mouseout", function(){
-								d3.select(this).style("color", "#333");    
+								d3.select(this).style("color", "#fff");    
 							});
 
 /************************* FUNCTIONS *****************************/
@@ -76,7 +76,7 @@ function addTextColor (_this) {
 	_this.style.color = "rgba("+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ")";
 }
 function removeTextColor(_) {
-	_.target.style.color = "#333";
+	_.target.style.color = "#fff";
 }
 function splitTextIntoSpans(_arr) {
     var color = "rgba("+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ")";
