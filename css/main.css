@@ -14,7 +14,11 @@ html {
     color: var(--main-black);
 }
 body {
-	margin: 0px 8px;
+    margin: 0px 8px;
+    overflow-x: hidden;
+}
+circle {
+    fill: orange;
 }
 .change-font {
     font-weight: bolder;
@@ -51,6 +55,11 @@ a, #phone{
 .hidden {
     display: none !important;
 }
+.invisible {
+    opacity: 0;
+    height: 0px;
+    transition: all 0.5s ease;
+}
 li {
     overflow: hidden;
     background: #ddd;
@@ -86,29 +95,10 @@ li i {
 	display: inline-block;
 	padding:.150em .400em;
 }
-li:hover {}
 li:hover a {
 	opacity: 1;
 	max-width: 200px;
 	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
-}
-.li-top1{
-	margin-left: 99px;
-}
-.li-top2{
-	margin-left: 166px;
-}
-.li-top3 {
-	margin-left: 231px;
-}
-.li-bot3 {
-	
-}
-.li-bot2 {
-	
-}
-.li-bot1 {
-	
 }
 #main-container {
     height: 100%;
@@ -132,13 +122,6 @@ li:hover a {
     background-color: var(--main-black);
     padding: 10px 10px;
 }
-.logo {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #logo-text {
     width: 70px;
     height: 70px;
@@ -149,16 +132,13 @@ li:hover a {
     border-bottom: 2px solid var(--main-teal-light);
 }
 #logo {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-.logo-spin {
-    animation: spin 4s linear infinite;
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
-
 #nav-bar-sections {
     height: 80%;
     display: flex;
@@ -168,11 +148,13 @@ li:hover a {
 }
 .tabs {
     width: 100px;
+    height: 40px;
     color: var(--main-white);
     padding: 30px 10px;
     font-size: 12px;
     cursor: pointer;
     text-align: center;
+    transition: all 0.1s ease;
 }
 .tabs:hover {
     color: var(--main-teal-light);
@@ -182,7 +164,15 @@ li:hover a {
     background-color: var(--main-teal-light)
 }
 .tab-icons {
-	font-size: 30px;
+    font-size: 30px;
+    transition: all 0.1s ease;
+}
+.tab-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+    transition: all 0.1s ease;
 }
 #content-area {
     display: flex;
@@ -200,7 +190,7 @@ li:hover a {
     padding-left: 20px;
 }
 .pg-contents {
-    padding-left: 60px;
+    padding: 0px 60px;
 }
 .pg-title {
 	color: var(--main-teal-light);
@@ -210,23 +200,48 @@ li:hover a {
 #home-pg {
     height: 100vh;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    background-color: var(--main-white);
-    background-image: url("../images/bg/biking.png");
-    background-size: cover;
+    flex-direction: column;
+    align-items: center;
 }
-.tab-content-inner {
-    z-index: 100;
-    padding-top: 10px;
+#fireflies {
+    width: 100%;
+    height: 150px;
+    border-bottom: 0.5px solid var(--main-teal-light);
+}
+#my-dp {
     position: absolute;
+    top: 50px;
+    width: 200px;
+    height: 200px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+.dp-img {
+    background: url(../images/bg/mini_golf.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: -50px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#my-intro {
+    width: 825px;
+    padding: 5px 10px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .attention-seeker {
     display: flex;
     flex-direction: column;
-    text-align: right;
-    padding: 7px 50px;
-    width: 800px;
+    text-align: justify;
+    padding: 7px 0px;
 }
 .split-text{
     transition: all 0.07s ease;
@@ -239,14 +254,14 @@ li:hover a {
     font-weight: bold;
     cursor: pointer;
     color: white;
-    text-shadow: 0px 1px 10px black;
+    text-shadow: 0px 1px 10px var(--main-teal);
 }
 .sub-name {
     font-size: 14px;
     font-weight: bold;
     display: flex;
-    justify-content: flex-end;
     padding: 10px 0px;
+    color: teal;
 }
 .sub-title {
     font-size: 12px;
@@ -257,16 +272,19 @@ li:hover a {
     font-size: 40px;
     font-weight: normal;
 }
-.pg-intro a {
+.elevator-pitch a {
     font-size: 16px;
     text-decoration: none;
-    background-color: #fbb03b47;
+    color: teal;
     padding: 3px;
+    transition: all 0.2s ease;
 }
-.pg-intro {
+.elevator-pitch a:hover {
+    background-color: #00b3b33b;
+}
+.elevator-pitch {
     text-align: justify;
-    width: 800px;
-    margin: 15px auto;
+    margin: 50px 0px;
 }
 #about-pg, .skills-pg {
     width: 800px;

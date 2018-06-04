@@ -12,38 +12,29 @@
             <div id = "main-bundle">
                 <div id = "nav-bar">
                     <div class = "section logo" data-key = "main">
-                        <span id="logo-text" data-key = "main" class = "hidden change-font" >VA</span>
-                        <img id = "logo" class = "logo-spin"  src = "./images/va_logo_rev.png"/>
+                        <img id = "logo" class = "logo"  src = "./images/va_logo_rev.png"/>
                     </div>
                     <div id = "nav-bar-sections">
-                        <div class = "section tabs" data-key = "about"><i class="tab-icons far fa-user-circle"></i></div>
-                        <div class = "section tabs" data-key = "skills"><i class="tab-icons fas fa-cogs"></i></div>
-                        <div class = "section tabs" data-key = "work"><i class="tab-icons fas fa-desktop"></i></div>
-                        <div class = "section tabs" data-key = "blog"><i class="tab-icons fas fa-pencil-alt"></i></div>
-                        <div class = "section tabs" data-key = "contact"><i class="tab-icons far fa-envelope"></i></div>
+                        <div class = "section tabs" data-key = "about"><i class="tab-icons far fa-user-circle"></i><div class="tab-text invisible">ABOUT</div></div>
+                        <div class = "section tabs" data-key = "skills"><i class="tab-icons fas fa-cogs"></i><div class="tab-text invisible">SKILLS</div></div>
+                        <div class = "section tabs" data-key = "work"><i class="tab-icons fas fa-desktop"></i><div class="tab-text invisible">WORK</div></div>
+                        <div class = "section tabs" data-key = "blog"><i class="tab-icons fas fa-pencil-alt"></i><div class="tab-text invisible">BLOG</div></div>
+                        <div class = "section tabs" data-key = "contact"><i class="tab-icons far fa-envelope"></i><div class="tab-text invisible">CONTACT</div></div>
                     </div>
                 </div>
                 <div id = "content-area">
                     <div class = "tab-contents" data-key = "main">
                         <div class = "pg-contents" id = "home-pg">
-                            <div class = "tab-content-inner">
+                            <div id = "fireflies"></div>
+                            <div id = "my-dp"><div class = "dp-img"></div></div>
+                            <div id = "my-intro">
                                 <div class = "attention-seeker">
                                     <div id = "hello" class = "name change-font">Hi there!</div>
                                     <div id = "my-name" class = "name change-font">I'm Varsha Alangar</div>
                                     <div id = "pronounciation" class = "sub-name"><div class = "sub-title">Pronounced:  </div>VARR-shuh AH-lung-garr</div>
                                     <div id = "tag-line" class = "definition change-font">Visualization Developer adding color to code...</div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "tab-contents" id = "about-tab-content" data-key = "about">
-                        <div class = "pg-contents">
-                            <div class = "change-font pg-title">About</div>
-                            <div id = "download">
-                                <a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé" class="button">Download Résumé</a>
-                            </div>
-							<div id = "about-pg">
-                                <div class = "resume-content pg-intro">
+                                <div class = "elevator-pitch">
                                     I am a visualization developer working with <a href="https://www.acumenllc.com/" target="_blank">Acumen, LLC</a> in Burlingame, California for about 2 years.
                                     <br><br>
                                     I enjoy designing visualizations and dashboard solutions and giving them life through the magic of JavaScript. 
@@ -55,6 +46,20 @@
                                     <br>I am passionate about animals, so bonus points to you if you have a dog!
                                     <br><br>
                                 </div>
+                            </div>
+                            <!-- <div class = "tab-content-inner">
+                                
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class = "tab-contents" id = "about-tab-content" data-key = "about">
+                        <div class = "pg-contents">
+                            <div class = "change-font pg-title">About</div>
+                            <div id = "download">
+                                <a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé" class="button">Download Résumé</a>
+                            </div>
+							<div id = "about-pg">
+                                
                             </div>
                             <div id = "timeline-container" class = "card-look">
                                 <div id = "timeline"></div>

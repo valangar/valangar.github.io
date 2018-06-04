@@ -10,16 +10,16 @@ d3.rCircles.rCirclesModule = function module() {
         width = 1000,
         height = 1000,
 		radius = 2,
+        num_circles = 100,
         svg,
         circles;
 
     function exports(_selection) { // create function to export
         _selection.each(function(_data) { 
-            var num_circles = 100,
-                data = d3.range(num_circles).map(function() {
+            var data = d3.range(num_circles).map(function() {
 					return {x: width * Math.random(), y: height * Math.random(), dx: Math.random() - 0.5, dy: Math.random() - 0.5};
 				});
-
+            
             svg = d3.select(this).append("svg")
                     .attr("width", width)
                     .attr("height", height);
@@ -28,10 +28,7 @@ d3.rCircles.rCirclesModule = function module() {
                             .data(data)
                             .enter()
                             .append("circle")
-                            .attr("r", radius)
-                            /* .style("fill", function(d, i){
-                                return "rgba(" + getRandomColorValue() + "," + getRandomColorValue() + "," + getRandomColorValue()+ ",0.5)";
-                            }) */;
+                            .attr("r", radius);
             
 				
 			d3.timer(function() {
@@ -49,26 +46,8 @@ d3.rCircles.rCirclesModule = function module() {
 						})
 					
 			});
-            /*//adding a glow to circles
-            //Container for the gradients
-            var defs = svg.append("defs");
-            //Filter for the outside glow
-            var filter = defs.append("filter").attr("id","glow");
-            filter.append("feGaussianBlur")
-                    .attr("stdDeviation","1.0")
-                    .attr("result","coloredBlur");
-            var feMerge = filter.append("feMerge");
-            feMerge.append("feMergeNode").attr("in","coloredBlur");
-            feMerge.append("feMergeNode").attr("in","SourceGraphic");
-            
-            circles.style("filter", "url(#glow)");*/
         });
     }// exports end
-    function getRandomColorValue() {
-        let min = 1,
-            max = 256;
-        return Math.random() * (max - min) + min;
-    }
     // Getters and Setters: 
     exports.width = function(_x) {
         if (!arguments.length) return width;
