@@ -10,140 +10,91 @@
     <body>
         <div id = "main-container">
             <div id = "main-bundle">
-                <div id = "nav-bar">
-                    <div class = "section logo" data-key = "main">
-                        <img id = "logo" class = "logo"  src = "./images/va_logo_rev.png"/>
-                    </div>
-                    <div id = "nav-bar-sections">
-                        <div class = "section tabs" data-key = "about"><i class="tab-icons far fa-user-circle"></i><div class="tab-text invisible">ABOUT</div></div>
-                        <div class = "section tabs" data-key = "skills"><i class="tab-icons fas fa-cogs"></i><div class="tab-text invisible">SKILLS</div></div>
-                        <div class = "section tabs" data-key = "work"><i class="tab-icons fas fa-desktop"></i><div class="tab-text invisible">WORK</div></div>
-                        <div class = "section tabs" data-key = "blog"><i class="tab-icons fas fa-pencil-alt"></i><div class="tab-text invisible">BLOG</div></div>
-                        <div class = "section tabs" data-key = "contact"><i class="tab-icons far fa-envelope"></i><div class="tab-text invisible">CONTACT</div></div>
-                    </div>
-                </div>
+				<div id = "profile" class = "fixed">
+                    <div id = "profile-pic">
+						<img id = "logo" class = "logo"  src = "./images/va_logo.png"/>
+						<div id = "my-dp" class="hidden"><div class = "dp-img"></div></div>
+					</div>
+					<div id = "profile-intro">
+						<div id = "name-intro">
+							<div id = "hello" class = "name change-font">Hi there!</div>
+							<div id = "my-name" class = "name change-font">I'm Varsha Alangar</div>
+							<div id = "pronounciation" class = "sub-name"><div class = "sub-title">Pronounced:  </div>VARR-shuh AH-lung-garr</div>
+							<div id = "tag-line" class = "definition change-font">Visualization Developer adding color to code...</div>
+						</div>
+					</div>
+				</div>
+                
+				<div id = "details" class = "one-line-disp">
+					<div class = "one-line-disp label">
+						<div class = "vertical-align">To know more: </div>
+						<li><i class = "contact-icons fas fa-download"></i><a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé"><b>Download Résumé</b></a></li>
+						<li><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
+						<li><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
+					</div>
+					<div class = "one-line-disp label">
+						<div class = "vertical-align">To get in touch: </div>
+						<li><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
+						<li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
+					</div>
+				</div>
+				
                 <div id = "content-area">
-                    <div class = "tab-contents" data-key = "main">
-                        <div class = "pg-contents" id = "home-pg">
-                            <div id = "fireflies"></div>
-                            <div id = "my-dp"><div class = "dp-img"></div></div>
-                            <div id = "my-intro">
-                                <div class = "attention-seeker">
-                                    <div id = "hello" class = "name change-font">Hi there!</div>
-                                    <div id = "my-name" class = "name change-font">I'm Varsha Alangar</div>
-                                    <div id = "pronounciation" class = "sub-name"><div class = "sub-title">Pronounced:  </div>VARR-shuh AH-lung-garr</div>
-                                    <div id = "tag-line" class = "definition change-font">Visualization Developer adding color to code...</div>
-                                </div>
-                                <div class = "elevator-pitch">
-                                    I am a visualization developer working with <a href="https://www.acumenllc.com/" target="_blank">Acumen, LLC</a> in Burlingame, California for about 2 years.
-                                    <br><br>
-                                    I enjoy designing visualizations and dashboard solutions and giving them life through the magic of JavaScript. 
-                                    <br>Before moving to California, I graduated with a Master of Science degree in Computing (Graphics and Visualization Track) from the <a href = "https://www.utah.edu/" target="_blank">University of Utah</a>. 
-                                    <br>My liking towards data viz stems from my desire to do two things I have always liked - Computer Science and Art. I like working with pixels and would happily spend hours on them.
-                                    <br>I gain inspiration from the works of <a href="https://bost.ocks.org/mike/" target="_blank">Mike Bostock</a>, <a href="https://www.visualcinnamon.com/" target="_blank">Nadieh Bremer</a>, <a href="http://alignedleft.com/" target="_blank">Scott Murray</a> and many others.
-                                    <br><br>
-                                    I like adventure vacations, going on Hikes, rock climbing (just the indoor kind for now), Kayaking and have recently taken to Skiing! 
-                                    <br>I am passionate about animals, so bonus points to you if you have a dog!
-                                    <br><br>
-                                </div>
-                            </div>
-                            <!-- <div class = "tab-content-inner">
-                                
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class = "tab-contents" id = "about-tab-content" data-key = "about">
-                        <div class = "pg-contents">
-                            <div class = "change-font pg-title">About</div>
-                            <div id = "download">
-                                <a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé" class="button">Download Résumé</a>
-                            </div>
-							<div id = "about-pg">
-                                
-                            </div>
-                            <div id = "timeline-container" class = "card-look">
-                                <div id = "timeline"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "tab-contents" data-key = "skills">
-                        <div id = "skills-tab-content" class = "pg-contents">
-							<div class = "change-font pg-title">Skills</div>
-							<div class = "skills-pg">
-                                <div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons-big" src="./images/icons/Javascript.png"/></div></div>
-                                <div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/jquery.png"/></div></div>
-                                <div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/d3.png"/></div></div>
-								<div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/vue.png"/></div></div>
-                                <div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/html.png"/></div></div>
-                                <div class = "card-look diamond row2"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/css.png"/></div></div>
-                                <div class = "card-look diamond row2"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/git.png"/></div></div>
-                                <div class = "card-look diamond row2"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/python.png"/></div></div>
-								<div class = "card-look diamond row2"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/opengl.png"/></div></div>
-								<div class = "card-look diamond row2"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/jira.png"/></div></div>
-								<div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons-sm" src="./images/icons/conf.png"/></div></div>
-								<div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons-sm" src="./images/icons/sql.png"/></div></div>
-								<div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons" src="./images/icons/Tableau.png"/></div></div>
-								<div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons-sm" src="./images/icons/ps.png"/></div></div>
-								<div class = "card-look diamond"><div class = "diamond-text"><img class = "img-icons-sm" src="./images/icons/vs_code.png"/></div></div>
-                            </div>
-							<div class ="pg-intro">This entire portfolio is written in vanilla JavaScript and D3.js. I tried to avoid the use of other libraries and frameworks.</div>
-							<div class ="skills-more-info"><i>Hover over the skills get more info here!</i></div>
-                        </div>
-                    </div>
-                    <div class = "tab-contents" data-key = "work">
-                        <div id = "work-pg" class = "pg-contents">
-								<div class = "change-font pg-title">Work</div>
-                                <img id = "keyboard" class = "screenshot" src = "./images/work/keyboard.jpg"></img>
-                                <video id = "icg-final-video" class = "screenshot" autoplay loop>
-                                    <source src="./images/work/icg_final_video.mp4" type="video/mp4">
-                                    Your browser does not support HTML5 video.
-                                </video>
-                                <img id = "ray-tracing-comp" class = "screenshot" src = "./images/work/ray_tracing_comp.jpg"></img>
-                                <img id = "cartogram" class = "screenshot" src = "./images/work/cartogram_rect.png"></img>
-                        </div>
-                    </div>
-                    
-                    <div class = "tab-contents" id="blog-tab-content"  data-key = "blog">
-                        <div class = "pg-contents">
-                            <div class = "change-font pg-title">Blog Posts</div>
-                            <div id = "blog-pg"></div>
-                        </div>
-                    </div>
-                    <div class = "tab-contents" id="contact-tab-content" data-key = "contact">
-                        <div class = "pg-contents">
-                            <div class = "change-font pg-title">Contact</div>
-                            <div class = "pg-intro">I am relatively new to the professional world and would love to learn more and grow each day; so please feel free to contact me with any questions, suggestions or comments you may have.</div>
-                            <div id = "contact-pg" class = "card-look" >
-                                <div id = "contact-info">
-                                    <div id = "contact-logo">
-                                        <img class = "contact-logo"  src = "./images/va_logo.png"/>
-                                        <div class="contact-name">Varsha Alangar</div>
-                                    </div>
-                                    <div id = "contact-list">
-                                        <ul class = "contact-list contact-list-bottom">
-                                            <li><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
-                                            <li><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
-                                            <li><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
-                                        </ul>
-                                        <ul  class = "contact-list contact-list-bottom">
-                                                <li><i class = "contact-icons fab fa-jsfiddle"></i><a href="https://jsfiddle.net/user/valangar/fiddles/"><b>JSFiddle</b></a></li>
-                                                <li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
-                                                <li><i class = "contact-icons fab fa-instagram"></i><a href="https://www.instagram.com/varshalangar/?hl=en"><b>Instagram</b></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+							<div class = "elevator-pitch">
+								I am a visualization developer working with <a href="https://www.acumenllc.com/" target="_blank">Acumen, LLC</a> in Burlingame, California for about 2 years.
+								<br><br>
+								I enjoy designing visualizations and dashboard solutions and giving them life through the magic of JavaScript. 
+								<br>Before moving to California, I graduated with a Master of Science degree in Computing (Graphics and Visualization Track) from the <a href = "https://www.utah.edu/" target="_blank">University of Utah</a>. 
+								<br>My liking towards data viz stems from my desire to do two things I have always liked - Computer Science and Art. I like working with pixels and would happily spend hours on them.
+								<br>I gain inspiration from the works of <a href="https://bost.ocks.org/mike/" target="_blank">Mike Bostock</a>, <a href="https://www.visualcinnamon.com/" target="_blank">Nadieh Bremer</a>, <a href="http://alignedleft.com/" target="_blank">Scott Murray</a> and many others.
+								<br><br>
+								I like adventure vacations, going on Hikes, rock climbing (just the indoor kind for now), Kayaking and have recently taken to Skiing! 
+								<br>I am passionate about animals, so bonus points to you if you have a dog!
+								<br><br>
+							</div>
+                            
+                            <div id = "skills-container">
+								<div class = "change-font pg-title">Skills</div>
+								<div class = "skills-pg">
+									<div class = "chip">Javascript - Vue.js, JQuery, D3.js</div>
+									<div class = "chip">HTML</div>
+									<div class = "chip">CSS</div>
+									<div class = "chip">Python</div>
+									<div class = "chip">OpenGL</div>
+									<div class = "chip">C++</div>
+									<div class = "chip">NLP</div>
+									<div class = "chip">Git version control</div>
+									<div class = "chip">PostgreSQL</div>
+									<div class = "chip">JIRA Task Tracking</div>
+									<div class = "chip">Confluence documentation</div>
+									<div class = "chip">Tableau</div>
+									<div class = "chip">Adobe Photoshop</div>
+									<div class = "chip">Visual Studio Code</div>
+								</div>
+							</div>
+							<div id = "work-container">
+								<div class = "change-font pg-title one-line-disp">Work<div class = "note vertical-align">Click on skill chips above to filter the work tiles below!</div></div>
+								<div class = "work-pg">
+									<img id = "keyboard" class = "screenshot" src = "./images/work/keyboard.jpg"></img>
+									<video id = "icg-final-video" class = "screenshot" autoplay loop>
+										<source src="./images/work/icg_final_video.mp4" type="video/mp4">
+										Your browser does not support HTML5 video.
+									</video>
+									<img id = "ray-tracing-comp" class = "screenshot" src = "./images/work/ray_tracing_comp.jpg"></img>
+								</div>
+							</div>
+							<div id = "pub-container">
+								<div class = "change-font pg-title">Publication</div>
+								<div id = "pub-pg">
+									<div class="pub-list"><a href="https://www.ijert.org/download/5350/regulated-distance-algorithm-in-large-networks-for-graph-partitioning">Alangar, V., Swaminathan, A. (2013) “Regulated Distance Algorithm in Large Networks for Graph Partitioning”, International Journal of Engineering Research and Technology, Vol. 2 (09), 2013, ISSN 2278 – 0181 </a></div>
+								</div>
+							</div>
                 </div>
                 
             </div>
         </div>
         <script src = "./libs/d3.min.js"></script>
         <script src = "https://code.jquery.com/jquery-3.1.0.js"></script>
-        <script src = "./data/data.js"></script>
-        <script src = "./scripts/modules/randomCircles.js"></script>
-        <script src = "./scripts/modules/forceDirGraph.js"></script>
         <script src = "./scripts/main.js"></script>
     </body>
 </html>

@@ -1,3 +1,1 @@
-# portfolio
-
-# Under construction
+A collection of my academic and professional work ...
