@@ -162,8 +162,9 @@ body {
     padding: 3px;
     transition: all 0.2s ease;
 }
-.elevator-pitch a:hover, .pub-list a:hover {
-    background-color: #00b3b33b;
+.elevator-pitch a:hover, .pub-list a:hover, .work-links:hover, .code-links:hover  {
+	font-weight: bold;
+    color: var(--main-teal-light);
 }
 .elevator-pitch {
     text-align: justify;
@@ -255,12 +256,12 @@ li:hover a {
 	margin-top: 10px;
 }
 .code-links{
-	width: 10%;
+	width: 5%;
     margin-top: 10px;
 	text-decoration: none;
 }
 .date {
-	width: 10%;
+	width: 15%;
     text-align: right;
     margin-top: 10px;
 }
@@ -277,6 +278,12 @@ li:hover a {
 #keyboard {
 	background-image: url("../images/work/keyboard.jpg");
 }
-#icg-final-video {
-    width: 200px;
+#teapot{
+	background-image: url("../images/work/ray_tracing_comp.jpg");
+}
+#icg-final {
+    background-image: url("../images/work/icg_final.png");
+}
+#nlp-poster{
+	background-image: url("../images/work/nlp_cropped.png");
 }
