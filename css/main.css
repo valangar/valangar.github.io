@@ -248,17 +248,17 @@ li:hover a {
 	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
 }
 .work-title{
-	width: 100%;
+    width: 100%;
 }
 .work-links {
-	width: 80%;
-	text-decoration: none;
-	margin-top: 10px;
+    width: 80%;
+    text-decoration: none;
+    margin-top: 10px;
 }
 .code-links{
 	width: 5%;
     margin-top: 10px;
-	text-decoration: none;
+    text-decoration: none;
 }
 .date {
 	width: 15%;
@@ -268,15 +268,15 @@ li:hover a {
 .screenshot {
     width: 100%;
     height: 200px;
-	margin: 5px 0px 10px 0px;
-	background-size: cover;
+    margin: 5px 0px 10px 0px;
+    background-size: cover;
 }
 .screenshot:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 #keyboard {
-	background-image: url("../images/work/keyboard.jpg");
+    background-image: url("../images/work/keyboard.jpg");
 }
 #teapot{
 	background-image: url("../images/work/ray_tracing_comp.jpg");
