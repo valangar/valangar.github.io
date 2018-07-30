@@ -1,9 +1,10 @@
 var logo = d3.selectAll("#logo"),
 	my_dp = d3.selectAll("#my-dp"),
-    split_text = d3.selectAll(".split-text");
+	selected_chips = [];
 	
 //Initial setup
-splitTextIntoSpans(["hello", "my-name"]);
+
+
 
 //Adding event listeners
 d3.select("#profile-pic")
@@ -24,16 +25,8 @@ d3.selectAll(".split-text").on("mouseover", function(){
 								d3.select(this).style("color", "#fff");    
 							});
 
-/************************* FUNCTIONS *****************************/
-function splitTextIntoSpans(_arr) {
-    var color = "rgba("+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ","+(Math.random() * (256 - 1) + 1) + ")";
-    for(var j in _arr) {
-        var ele = d3.select("#"+_arr[j]);
-        var text = ele.html().split('');
-        var split_text = "";
-        for(var i in text){
-            split_text += "<span class = 'split-text' >"+ text[i] +"</span>";
-        }
-        ele.html(split_text);
-    }
-}
+d3.selectAll(".chip").on("click", function(d){
+	if(selected_chips.indexOf(d.attr("id") >= 0)) selected_chips.push();
+});
+
+

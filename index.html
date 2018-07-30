@@ -36,28 +36,24 @@
 					</div>
 					<div id = "profile-intro">
 						<div id = "name-intro">
-							<div id = "hello" class = "name change-font">Hi there!</div>
-							<div id = "my-name" class = "name change-font">I'm Varsha Alangar</div>
-							<div id = "pronounciation" class = "sub-name"><div class = "sub-title">Pronounced:  </div>VARR-shuh AH-lung-garr</div>
+							<!-- <div id = "hello" class = "name change-font">Hi there!</div> -->
+							<div id = "my-name" class = "name change-font">Varsha Alangar<div id = "pronounciation" class = "sub-name"><div class = "sub-title">( Pronounced:  </div>VARR-shuh AH-lung-garr )</div></div>
 							<div id = "tag-line" class = "definition change-font">Visualization Developer adding color to code...</div>
+							<div class = "one-line-disp label">
+								<li><i class = "contact-icons fas fa-download"></i><a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé"><b>Download Résumé</b></a></li>
+								<li><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
+								<li><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
+								<li><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
+								<li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
+							</div>
 						</div>
 					</div>
 				</div>
-                
-				<div id = "details" class = "one-line-disp">
-					<div class = "one-line-disp label">
-						<div class = "vertical-align">To know more: </div>
-						<li><i class = "contact-icons fas fa-download"></i><a href="./pdfs/Alangar,Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé"><b>Download Résumé</b></a></li>
-						<li><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
-						<li><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
-					</div>
-					<div class = "one-line-disp label">
-						<div class = "vertical-align">To get in touch: </div>
-						<li><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
-						<li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
-					</div>
+				<br>
+				<br>
+				<div id = "viz-area">
+
 				</div>
-				
                 <div id = "content-area">
 							<div class = "elevator-pitch">
 								I am a visualization developer working with <a href="https://www.acumenllc.com/" target="_blank">Acumen, LLC</a> in Burlingame, California for about 2 years.
@@ -97,26 +93,31 @@
 							<div id = "work-container">
 								<div class = "change-font pg-title one-line-disp">Work<div class = "note vertical-align">Click on skill chips above to filter the work tiles below!</div></div>
 								<div class = "work-pg">
-									<a id="acumen-hrsp" class="work-links js jquery html css" href="https://valangar.github.io/acumen-projects/hrsp_project/index.html">
-										<div class="one-line-disp work-title">Visualizing geographic distribution<a class="code-links"></a><div class="date">November, 2017</div></div>
-										<a href="https://valangar.github.io/acumen-projects/hrsp_project/index.html" id = "hrsp" class = "screenshot"></a>
-									</a>
-									<a id="js-drum-kit" class="work-links js html css" href="https://valangar.github.io/generic/js_drum_kit/">
-										<div class="one-line-disp work-title">JavaScript DrumKit<a class="code-links" href="https://github.com/valangar/generic/tree/master/js_drum_kit">code</a><div class="date">April 02, 2018</div></div>
-										<a href="https://valangar.github.io/generic/js_drum_kit/" id = "keyboard" class = "screenshot"></a>
-									</a>
-									<a id="icg" class="work-links c++ opengl" href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf">
-										<div class="one-line-disp work-title">Non-PhotoRealistic Rendering<a class="code-links" href="https://github.com/valangar/interactive-computer-graphics-projects/tree/master/FinalProject">code</a><div class="date">May, 2017</div></div>
-										<a href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf" id = "icg-final" class = "screenshot"></a>
-									</a>
-									<a id="ray-tracing-comp" class="work-links c++ " href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14">
-										<div class="one-line-disp work-title">Ray Tracing Competition<a class="code-links" href="https://github.com/valangar/ray-tracing-competition">code</a><div class="date">December, 2015</div></div>
-										<a href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14" id = "teapot" class = "screenshot"></a>
-									</a>
-									<a id="nlp-qa" class="work-links python nlp" href="./images/work/nlp.png">
-										<div class="one-line-disp work-title">Natural Language Processing: Question Answering System<a class="code-links" href="https://github.com/valangar/nlp-qa-system-project">code</a><div class="date">December, 2015</div></div>
-										<a href="./images/work/nlp.png" id = "nlp-poster" class = "screenshot"></a>
-									</a>
+									<div class = "work-card" id = "acumen-hrsp" >
+										<a class="work-links js jquery html css" href="https://valangar.github.io/acumen-projects/hrsp_project/index.html">Visualizing geographic distribution</a>
+										<a href="https://valangar.github.io/acumen-projects/hrsp_project/index.html" ><img class = "screenshot" src="./images/work/hrsp.png"/></a>
+										<div class="one-line-disp align-right"><a class="code-links"></a><div class="date">November, 2017</div></div>
+									</div>
+									<div class = "work-card" id = "js-drum-kit" >
+										<a class="work-links js html css" href="https://valangar.github.io/generic/js_drum_kit/">JavaScript DrumKit</a>
+										<a href="https://valangar.github.io/generic/js_drum_kit/" ><img class = "screenshot" src="./images/work/keyboard.jpg"/></a>
+										<div class="one-line-disp align-right"><a class="code-links" href="https://valangar.github.io/generic/js_drum_kit/">code</a><div class="date">April 02, 2018</div></div>
+									</div>
+									<div class = "work-card" id = "icg" >
+										<a class="work-links c++ opengl" href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf">Non-PhotoRealistic Rendering</a>
+										<a href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf" ><img class = "screenshot" src="./images/work/icg_final.png"/></a>
+										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/interactive-computer-graphics-projects/tree/master/FinalProject">code</a><div class="date">May, 2017</div></div>
+									</div>
+									<div class = "work-card" id = "ray-tracing-comp" >
+										<a class="work-links c++ " href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14">Ray Tracing Competition</a>
+										<a href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14" ><img class = "screenshot" src="./images/work/ray_tracing_comp.jpg"/></a>
+										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/ray-tracing-competition">code</a><div class="date">December, 2015</div></div>
+									</div>
+									<div class = "work-card" id = "nlp-qa" >
+										<a class="work-links python nlp" href="./images/work/nlp.png">Natural Language Processing: Question Answering System</a>
+										<a href="./images/work/nlp.png" ><img class = "screenshot" src="./images/work/nlp_cropped.png"/></a>
+										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/nlp-qa-system-project">code</a><div class="date">December, 2015</div></div>
+									</div>
 								</div>
 							</div>
 							<div id = "pub-container">
