@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122957470-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,7 @@
 		  gtag('js', new Date());
 
 		  gtag('config', 'UA-122957470-1');
-		</script>
+		</script> -->
 
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Varsha Alangar</title>
@@ -51,7 +51,7 @@
 				</div>
 				<br>
 				<br>
-				<div id = "viz-area">
+				<div id = "svg-container">
 
 				</div>
                 <div id = "content-area">
@@ -79,7 +79,7 @@
 									<div id = "css" class = "chip">CSS</div>
 									<div id = "python" class = "chip">Python</div>
 									<div id = "opengl" class = "chip">OpenGL</div>
-									<div id = "c++" class = "chip">C++</div>
+									<div id = "cpp" class = "chip">C++</div>
 									<div id = "nlp" class = "chip">NLP</div>
 									<div id = "git" class = "chip">Git version control</div>
 									<div id = "sql" class = "chip">PostgreSQL</div>
@@ -91,30 +91,35 @@
 								</div>
 							</div>
 							<div id = "work-container">
-								<div class = "change-font pg-title one-line-disp">Work<div class = "note vertical-align">Click on skill chips above to filter the work tiles below!</div></div>
+								<div class = "change-font pg-title one-line-disp">Work
+									<div id = "work-pg-note" class = "note vertical-align">
+										Click on skill chips above to filter the work tiles below!
+									</div>
+									<div id = "reset-btn" class = "hidden">Remove filters</div>
+								</div>
 								<div class = "work-pg">
-									<div class = "work-card" id = "acumen-hrsp" >
-										<a class="work-links js jquery html css" href="https://valangar.github.io/acumen-projects/hrsp_project/index.html">Visualizing geographic distribution</a>
+									<div class = "work-card js jquery html css d3" id = "acumen-hrsp">
+										<a class="work-links"  href="https://valangar.github.io/acumen-projects/hrsp_project/index.html">Visualizing geographic distribution</a>
 										<a href="https://valangar.github.io/acumen-projects/hrsp_project/index.html" ><img class = "screenshot" src="./images/work/hrsp.png"/></a>
 										<div class="one-line-disp align-right"><a class="code-links"></a><div class="date">November, 2017</div></div>
 									</div>
-									<div class = "work-card" id = "js-drum-kit" >
-										<a class="work-links js html css" href="https://valangar.github.io/generic/js_drum_kit/">JavaScript DrumKit</a>
+									<div class = "work-card js html css" id = "js-drum-kit" >
+										<a class="work-links" href="https://valangar.github.io/generic/js_drum_kit/">JavaScript DrumKit</a>
 										<a href="https://valangar.github.io/generic/js_drum_kit/" ><img class = "screenshot" src="./images/work/keyboard.jpg"/></a>
 										<div class="one-line-disp align-right"><a class="code-links" href="https://valangar.github.io/generic/js_drum_kit/">code</a><div class="date">April 02, 2018</div></div>
 									</div>
-									<div class = "work-card" id = "icg" >
-										<a class="work-links c++ opengl" href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf">Non-PhotoRealistic Rendering</a>
+									<div class = "work-card cpp opengl" id = "icg" >
+										<a class="work-links" href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf">Non-PhotoRealistic Rendering</a>
 										<a href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf" ><img class = "screenshot" src="./images/work/icg_final.png"/></a>
 										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/interactive-computer-graphics-projects/tree/master/FinalProject">code</a><div class="date">May, 2017</div></div>
 									</div>
-									<div class = "work-card" id = "ray-tracing-comp" >
-										<a class="work-links c++ " href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14">Ray Tracing Competition</a>
+									<div class = "work-card cpp " id = "ray-tracing-comp" >
+										<a class="work-links" href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14">Ray Tracing Competition</a>
 										<a href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14" ><img class = "screenshot" src="./images/work/ray_tracing_comp.jpg"/></a>
 										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/ray-tracing-competition">code</a><div class="date">December, 2015</div></div>
 									</div>
-									<div class = "work-card" id = "nlp-qa" >
-										<a class="work-links python nlp" href="./images/work/nlp.png">Natural Language Processing: Question Answering System</a>
+									<div class = "work-card python nlp" id = "nlp-qa" >
+										<a class="work-links" href="./images/work/nlp.png">Natural Language Processing: Question Answering System</a>
 										<a href="./images/work/nlp.png" ><img class = "screenshot" src="./images/work/nlp_cropped.png"/></a>
 										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/nlp-qa-system-project">code</a><div class="date">December, 2015</div></div>
 									</div>
