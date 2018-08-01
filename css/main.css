@@ -44,7 +44,7 @@ a{
     color: var(--main-teal);
 }
 html {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: var(--main-black);
@@ -163,7 +163,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    color: teal;
+    color: var(--main-teal);
     padding: 3px;
     transition: all 0.2s ease;
 }
@@ -173,13 +173,12 @@ body {
 }
 .elevator-pitch {
     text-align: justify;
-    margin: 15px 0px;
 }
 .pg-title {
 	color: var(--main-teal-light);
     font-size: 32px;
 }
-.pub-pg, .work-pg, .skills-pg {
+#pub-pg, .work-pg, .skills-pg {
     margin-top: 5px;
     display: flex;
     align-items: center;
@@ -209,7 +208,7 @@ body {
 	color: var(--main-white);
 	background-color: teal;
 }
-#work-container, #pub-container {
+.elevator-pitch, #work-container, #pub-container, #skills-container {
 	width: 100%;
 	margin-top: 20px;
 }
@@ -218,7 +217,7 @@ body {
 }
 .pub-list {
 	font-size: 14px;
-    padding: 10px 0px 50px 30px;
+    padding-left: 30px;
 }
 .pub-list a {
     text-decoration: none;
