@@ -7,7 +7,9 @@
     --main-orange: #fbb03b;
 	--main-red: #f2738c;
     --main-black: #333;
-	--main-grey: gainsboro;
+	--main-grey-dark: gainsboro;
+	--main-grey: #f4f4f4;
+	--main-grey-light: #f8f8f8;
 }
 .hidden {
     display: none !important;
@@ -16,6 +18,11 @@
     opacity: 0;
     height: 0px;
     transition: all 0.5s ease;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 .one-line-disp {
 	display: flex;
@@ -58,6 +65,25 @@ body {
     width: 1000px;
 	padding: 20px 0px 20px 0px;
 	margin: auto;
+}
+#fixed-profile {
+	width: 1000px;
+    border-bottom: 0.1px solid silver;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-grey-light);
+    justify-content: center;
+}
+#fixed-logo {
+	width: 50px;
+    height: 50px;
+}
+#fixed-my-name {
+	width: 100px;
+    padding: 0px 50px 0px 10px;
+}
+#fixed-contact {
 }
 #profile {
 	display: flex;
@@ -191,7 +217,7 @@ body {
 	font-size: 14px;
     color: var(--main-teal);
     padding: 10px;
-    background-color: #80808029;
+    background-color: var(--main-grey);
     border-radius: 50px;
     margin: 0px 10px 10px 0px;
     cursor: pointer;
@@ -299,6 +325,6 @@ li:hover a {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 20px var(--main-grey);
+    box-shadow: 0px 0px 20px var(--main-grey-dark);
 	transition: all 0.1s ease;
 }

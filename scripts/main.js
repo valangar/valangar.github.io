@@ -1,10 +1,33 @@
 var logo = d3.selectAll("#logo"),
 	my_dp = d3.selectAll("#my-dp"),
-	selected_chips = [];
+	selected_chips = [],
+	contacts_container = document.getElementById("contact"),
+	init_offset = contacts_container.offsetTop,
+	fixed_container = d3.select("#fixed-profile");
 	
 //Initial setup
 
 //Adding event listeners
+window.onscroll = function() {
+	console.log("here");
+	console.log(window.pageYOffset);
+	console.log(contacts_container.offsetTop);
+	let class_name = "sticky";
+	if(window.pageYOffset > contacts_container.offsetTop && window.pageYOffset > init_offset) {
+		//contacts_container.classList.add("sticky");
+		//for IE 9 compatibility:
+		let arr = contacts_container.className.split(" ");
+		if (arr.indexOf(class_name) == -1) {
+			contacts_container.className += " " + class_name;
+		}
+		fixed_container.classed("hidden", false);
+	}
+	else {
+		//contacts_container.classed("sticky", false);
+		contacts_container.className = contacts_container.className.replace(/\bsticky\b/g, "");
+		fixed_container.classed("hidden", true);
+	}
+}
 d3.select("#profile-pic")
 	.on("mouseover", function(){
 		logo.classed("hidden", true);
