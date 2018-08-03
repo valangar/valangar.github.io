@@ -48,6 +48,7 @@ a{
     font-size: 14px;
     font-style: normal;
     font-weight: bold;
+    text-decoration: none;
     color: var(--main-teal);
 }
 html {
@@ -74,6 +75,7 @@ body {
     align-items: center;
     background-color: var(--main-grey-light);
     justify-content: center;
+    z-index: 100;
 }
 #fixed-logo {
 	width: 50px;
@@ -187,9 +189,6 @@ body {
 }
 .elevator-pitch a {
     font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--main-teal);
     padding: 3px;
     transition: all 0.2s ease;
 }
@@ -246,9 +245,7 @@ body {
     padding-left: 30px;
 }
 .pub-list a {
-    text-decoration: none;
 	font-size: 14px;
-    color: var(--main-teal);
 }
 li {
     overflow: hidden;
@@ -304,7 +301,7 @@ li:hover a {
 .date {
     text-align: right;
     font-style: italic;
-    color: var(--main-grey);
+    color: var(--main-grey-dark);
 }
 .align-right {
     justify-content: space-between;
@@ -312,13 +309,8 @@ li:hover a {
 .screenshot {
     width: 400px;
     height: 250px;
-    margin: 5px 0px 10px 0px;
     background-size: cover;
 	transition: all 0.1s ease;
-}
-.work-card:hover {
-    box-shadow: 0px 0px 20px var(--main-orange);
-    cursor: pointer;
 }
 .work-card {
     padding: 10px;
@@ -327,4 +319,54 @@ li:hover a {
     flex-direction: column;
     box-shadow: 0px 0px 20px var(--main-grey-dark);
 	transition: all 0.1s ease;
+}
+.work-code-date-strip {
+    margin-top: 10px;
+}
+#acumen-hrsp{
+    background-image: url("../images/work/hrsp.png");
+}
+#js-drum-kit{
+    background-image: url("../images/work/keyboard.png");
+}
+#icg{
+    background-image: url("../images/work/icg_final.png");
+}
+#ray-tracing-comp{
+background-image: url("../images/work/ray_tracing_comp.jpg");
+}
+#nlp-qa{
+background-image: url("../images/work/nlp_cropped.png");
+}
+.img-wrap {
+    position: relative;
+    cursor: pointer;
+}
+.img-text-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00b3b3f2;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    transition: opacity .2s, visibility .2s;
+}
+.img-wrap:hover .img-text-layer  {
+    visibility: visible;
+    opacity: 1;
+}
+.img-text {
+    transition: .2s;
+    transform: translateY(1em);
+    padding: 20px;
+}
+.img-wrap:hover .img-text {
+    transform: translateY(0);
 }
