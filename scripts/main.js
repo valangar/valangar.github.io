@@ -9,9 +9,6 @@ var logo = d3.selectAll("#logo"),
 
 //Adding event listeners
 window.onscroll = function() {
-	console.log("here");
-	console.log(window.pageYOffset);
-	console.log(contacts_container.offsetTop);
 	let class_name = "sticky";
 	if(window.pageYOffset > contacts_container.offsetTop && window.pageYOffset > init_offset) {
 		//contacts_container.classList.add("sticky");
@@ -23,7 +20,7 @@ window.onscroll = function() {
 		fixed_container.classed("hidden", false);
 	}
 	else {
-		//contacts_container.classed("sticky", false);
+		//contacts_container.classed("sticky", false); there's that IE9 compatibility issue again!
 		contacts_container.className = contacts_container.className.replace(/\bsticky\b/g, "");
 		fixed_container.classed("hidden", true);
 	}
@@ -39,7 +36,6 @@ d3.select("#profile-pic")
 	});
 	
 d3.select("#skills-container").selectAll(".chip").on("click", function(d){
-	console.log("clicked");
 	let is_clicked = d3.select(this).classed("chip-clicked"),
 		id = d3.select(this).attr("id");
 	d3.select(this).classed("chip-clicked", !is_clicked);

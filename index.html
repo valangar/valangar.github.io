@@ -78,12 +78,12 @@
 								I like adventure vacations, going on Hikes, rock climbing (just the indoor kind for now), Kayaking and have recently taken to Skiing! 
 								<br>I am passionate about animals, so bonus points to you if you have a dog!
 							</div>
-                            <div id = "pub-container">
+                            <!-- <div id = "pub-container">
 								<div class = "change-font pg-title">Publication</div>
 								<div id = "pub-pg">
 									<div class="pub-list"><a href="https://www.ijert.org/download/5350/regulated-distance-algorithm-in-large-networks-for-graph-partitioning">Alangar, V., Swaminathan, A. (2013) “Regulated Distance Algorithm in Large Networks for Graph Partitioning”, International Journal of Engineering Research and Technology, Vol. 2 (09), 2013, ISSN 2278 – 0181 </a></div>
 								</div>
-							</div>
+							</div> -->
                             <div id = "skills-container">
 								<div class = "change-font pg-title">Skills</div>
 								<div class = "skills-pg">
@@ -93,6 +93,8 @@
 									<div id = "vue" class = "chip">Vue.js</div>
 									<div id = "html" class = "chip">HTML</div>
 									<div id = "css" class = "chip">CSS</div>
+									<div id = "json" class = "chip">JSON</div>
+									<div id = "mvc" class = "chip">MVC Framework</div>
 									<div id = "python" class = "chip">Python</div>
 									<div id = "opengl" class = "chip">OpenGL</div>
 									<div id = "cpp" class = "chip">C++</div>
@@ -114,30 +116,50 @@
 									<div id = "reset-btn" class = "hidden">Remove filters</div>
 								</div>
 								<div class = "work-pg">
-									<div class = "work-card js jquery html css d3" id = "acumen-hrsp">
-										<a class="work-links"  href="https://valangar.github.io/acumen-projects/hrsp_project/index.html">Visualizing geographic distribution</a>
-										<a href="https://valangar.github.io/acumen-projects/hrsp_project/index.html" ><img class = "screenshot" src="./images/work/hrsp.png"/></a>
-										<div class="one-line-disp align-right"><a class="code-links"></a><div class="date">November, 2017</div></div>
+									<div class="work-card js jquery html css d3 json mvc">
+										<div class = "img-wrap">
+											<div class = "img screenshot" id = "acumen-hrsp" ></div>
+											<a class="img-text-layer" href="https://valangar.github.io/acumen-projects/hrsp_project/index.html">
+												<p class="img-text">Visual tool showing the geographic distribution of high risk physicians across the nation.<br><br><br>Click to see more ...</p>
+											</a>
+										</div>
+										<div class="work-code-date-strip one-line-disp align-right"><a class="code-links"></a><div class="date">November, 2017</div></div>
 									</div>
-									<div class = "work-card js html css" id = "js-drum-kit" >
-										<a class="work-links" href="https://valangar.github.io/generic/js_drum_kit/">JavaScript DrumKit</a>
-										<a href="https://valangar.github.io/generic/js_drum_kit/" ><img class = "screenshot" src="./images/work/keyboard.jpg"/></a>
-										<div class="one-line-disp align-right"><a class="code-links" href="https://valangar.github.io/generic/js_drum_kit/">code</a><div class="date">April 02, 2018</div></div>
+									<div class="work-card js html css">
+										<div class = "img-wrap">
+											<div class = "img screenshot" id = "js-drum-kit" ></div>
+											<a class="img-text-layer" href="https://valangar.github.io/generic/js_drum_kit/">
+												<p class="img-text">A fun online DrumKit written in plain JavaScript, HTML and CSS without any supporting library.<br><br><br>Click to see more ...</p>
+											</a>
+										</div>
+										<div class="work-code-date-strip one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/generic/tree/master/js_drum_kit">code</a><div class="date">April 02, 2018</div></div>
 									</div>
-									<div class = "work-card cpp opengl" id = "icg" >
-										<a class="work-links" href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf">Non-PhotoRealistic Rendering</a>
-										<a href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf" ><img class = "screenshot" src="./images/work/icg_final.png"/></a>
-										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/interactive-computer-graphics-projects/tree/master/FinalProject">code</a><div class="date">May, 2017</div></div>
+									<div class="work-card cpp opengl">
+										<div class = "img-wrap">
+											<div class = "img screenshot" id = "icg" ></div>
+											<a class="img-text-layer" href="https://github.com/valangar/interactive-computer-graphics-projects/blob/master/FinalProject/Documentation/CS6610_FinalProjectReport_VAlangar.pdf">
+												<p class="img-text">An implementation of Non-PhotoRealistic rendering techniques like Hatching, Gooch shading and Toon shading on the infamous Utah Teapot, Stanford Bunny and Stanford Dragon objects.<br><br><br>Click to see more ...</p>
+											</a>
+										</div>
+										<div class="work-code-date-strip one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/interactive-computer-graphics-projects/tree/master/FinalProject">code</a><div class="date">May, 2017</div></div>
 									</div>
-									<div class = "work-card cpp " id = "ray-tracing-comp" >
-										<a class="work-links" href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14">Ray Tracing Competition</a>
-										<a href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14" ><img class = "screenshot" src="./images/work/ray_tracing_comp.jpg"/></a>
-										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/ray-tracing-competition">code</a><div class="date">December, 2015</div></div>
+									<div class="work-card cpp ">
+										<div class = "img-wrap">
+											<div class = "img screenshot" id = "ray-tracing-comp" ></div>
+											<a class="img-text-layer" href="https://graphics.cs.utah.edu/courses/cs6620/fall2015/?prj=14">
+												<p class="img-text">A ray tracer created from scratch to render an original image which was part of the Teapot Rendering Competition.<br><br><br>Click to see more ...</p>
+											</a>
+										</div>
+										<div class="work-code-date-strip one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/ray-tracing-competition">code</a><div class="date">December, 2015</div></div>
 									</div>
-									<div class = "work-card python nlp" id = "nlp-qa" >
-										<a class="work-links" href="./images/work/nlp.png">Natural Language Processing: Question Answering System</a>
-										<a href="./images/work/nlp.png" ><img class = "screenshot" src="./images/work/nlp_cropped.png"/></a>
-										<div class="one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/nlp-qa-system-project">code</a><div class="date">December, 2015</div></div>
+									<div class="work-card python nlp">
+										<div class = "img-wrap">
+											<div class = "img screenshot" id = "nlp-qa" ></div>
+											<a class="img-text-layer" href="./images/work/nlp.png">
+												<p class="img-text">Responses generated to queries from articles using NLTK Toolkit and Rule-based techniques for Natural Language Processing in Python.<br><br><br>Click to see more ...</p>
+											</a>
+										</div>
+										<div class="work-code-date-strip one-line-disp align-right"><a class="code-links" href="https://github.com/valangar/nlp-qa-system-project">code</a><div class="date">December, 2015</div></div>
 									</div>
 								</div>
 							</div>
