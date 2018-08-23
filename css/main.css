@@ -60,12 +60,16 @@ html {
 body {
 }
 #main-container {
-	width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 #main-bundle {
     width: 1000px;
-	padding: 20px 0px 20px 0px;
-	margin: auto;
+	padding: 20px 10px;
+    margin: auto;
+    z-index: 100;
+    background-color: #fff;
 }
 #fixed-profile {
 	width: 1000px;
@@ -75,7 +79,7 @@ body {
     align-items: center;
     background-color: var(--main-grey-light);
     justify-content: center;
-    z-index: 100;
+    z-index: 1000;
 }
 #fixed-logo {
 	width: 50px;
@@ -186,6 +190,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 0px 25px;
 }
 .elevator-pitch a {
     font-size: 14px;
@@ -369,4 +374,10 @@ background-image: url("../images/work/nlp_cropped.png");
 }
 .img-wrap:hover .img-text {
     transform: translateY(0);
+}
+.geo-shape {
+    height: 400px;
+    width: 950px;
+    background-image: url(../images/bg/double.png);
+    background-size: cover;
 }
