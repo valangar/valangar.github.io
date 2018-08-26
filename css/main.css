@@ -64,12 +64,15 @@ body {
     display: flex;
     justify-content: center;
 }
+#main-bundle-shadow{
+	width: 1040px;
+    margin: auto;
+    box-shadow: 0px 5px 20px gainsboro;
+}
 #main-bundle {
     width: 1000px;
-	padding: 20px 10px;
-    margin: auto;
-    z-index: 100;
-    background-color: #fff;
+	padding: 20px 0px 20px 0px;
+	margin: 20px;
 }
 #fixed-profile {
 	width: 1000px;
@@ -325,6 +328,11 @@ li:hover a {
     box-shadow: 0px 0px 20px var(--main-grey-dark);
 	transition: all 0.1s ease;
 }
+#svg-container {
+	background-image: url(../images/bg/VarshaAlangar.png);
+    width: 1000px;
+    height: 260px;
+}
 .work-code-date-strip {
     margin-top: 10px;
 }
@@ -366,7 +374,7 @@ background-image: url("../images/work/nlp_cropped.png");
 .img-wrap:hover .img-text-layer  {
     visibility: visible;
     opacity: 1;
-}
+} 
 .img-text {
     transition: .2s;
     transform: translateY(1em);
@@ -374,10 +382,4 @@ background-image: url("../images/work/nlp_cropped.png");
 }
 .img-wrap:hover .img-text {
     transform: translateY(0);
-}
-.geo-shape {
-    height: 400px;
-    width: 950px;
-    background-image: url(../images/bg/double.png);
-    background-size: cover;
 }
