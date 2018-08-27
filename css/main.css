@@ -67,7 +67,7 @@ body {
 #main-bundle-shadow{
 	width: 1040px;
     margin: auto;
-    box-shadow: 0px 5px 20px gainsboro;
+    /*box-shadow: 0px 5px 20px gainsboro;*/
 }
 #main-bundle {
     width: 1000px;
@@ -81,16 +81,16 @@ body {
     display: flex;
     align-items: center;
     background-color: var(--main-grey-light);
-    justify-content: center;
     z-index: 1000;
 }
 #fixed-logo {
 	width: 50px;
     height: 50px;
+    margin-left: 25px;
 }
 #fixed-my-name {
 	width: 100px;
-    padding: 0px 50px 0px 10px;
+    padding: 0px 158px 0px 10px;
 }
 #fixed-contact {
 }
