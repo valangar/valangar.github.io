@@ -328,10 +328,8 @@ li:hover a {
     box-shadow: 0px 0px 20px var(--main-grey-dark);
 	transition: all 0.1s ease;
 }
-#svg-container {
-	background-image: url(../images/bg/VarshaAlangar.png);
-    width: 1000px;
-    height: 260px;
+.timeline{
+	width: 100%;
 }
 .work-code-date-strip {
     margin-top: 10px;
