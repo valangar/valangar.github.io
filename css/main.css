@@ -349,6 +349,9 @@ background-image: url("../images/work/ray_tracing_comp.jpg");
 #nlp-qa{
 background-image: url("../images/work/nlp_cropped.png");
 }
+#ps{
+    background-image: url("../images/work/space.png");
+    }
 .img-wrap {
     position: relative;
     cursor: pointer;
