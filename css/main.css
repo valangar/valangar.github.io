@@ -60,12 +60,14 @@ html {
 body {
 }
 #main-container {
-	width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 #main-bundle-shadow{
 	width: 1040px;
     margin: auto;
-    box-shadow: 0px 5px 20px gainsboro;
+    /*box-shadow: 0px 5px 20px gainsboro;*/
 }
 #main-bundle {
     width: 1000px;
@@ -79,16 +81,16 @@ body {
     display: flex;
     align-items: center;
     background-color: var(--main-grey-light);
-    justify-content: center;
-    z-index: 100;
+    z-index: 1000;
 }
 #fixed-logo {
 	width: 50px;
     height: 50px;
+    margin-left: 25px;
 }
 #fixed-my-name {
 	width: 100px;
-    padding: 0px 50px 0px 10px;
+    padding: 0px 158px 0px 10px;
 }
 #fixed-contact {
 }
@@ -191,6 +193,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 0px 25px;
 }
 .elevator-pitch a {
     font-size: 14px;
@@ -325,10 +328,8 @@ li:hover a {
     box-shadow: 0px 0px 20px var(--main-grey-dark);
 	transition: all 0.1s ease;
 }
-#svg-container {
-	background-image: url(../images/bg/VarshaAlangar.png);
-    width: 1000px;
-    height: 260px;
+.timeline{
+	width: 100%;
 }
 .work-code-date-strip {
     margin-top: 10px;
@@ -351,6 +352,9 @@ background-image: url("../images/work/ray_tracing_comp.jpg");
 #nlp-qa{
 background-image: url("../images/work/nlp_cropped.png");
 }
+#ps{
+    background-image: url("../images/work/space.png");
+    }
 .img-wrap {
     position: relative;
     cursor: pointer;
@@ -374,7 +378,7 @@ background-image: url("../images/work/nlp_cropped.png");
 .img-wrap:hover .img-text-layer  {
     visibility: visible;
     opacity: 1;
-}
+} 
 .img-text {
     transition: .2s;
     transform: translateY(1em);
@@ -383,4 +387,3 @@ background-image: url("../images/work/nlp_cropped.png");
 .img-wrap:hover .img-text {
     transform: translateY(0);
 }
-
