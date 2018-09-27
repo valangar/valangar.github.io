@@ -333,6 +333,9 @@ li:hover a {
 .work-code-date-strip {
     margin-top: 10px;
 }
+#acumen-cm {
+	background-image: url("../images/work/CM_Tool.JPG");
+}
 #acumen-hrsp{
     background-image: url("../images/work/hrsp.png");
 }
