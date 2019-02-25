@@ -345,6 +345,9 @@ li:hover a {
 .work-code-date-strip {
     margin-top: 10px;
 }
+#acumen-own {
+	background-image: url("../images/work/ownership.png");
+}
 #acumen-cm {
 	background-image: url("../images/work/CM_Tool.JPG");
 }
