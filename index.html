@@ -18,29 +18,30 @@
 		<script src = "./css/fontawesome-all.js"></script>
     </head>
     <body>
+		<div id = "profile" >
+			<div id = "profile-pic">
+				<img id = "logo" class = "logo"  src = "./images/va_logo.png"/>
+				<!-- <div id = "my-dp" class="hidden"><div class = "dp-img"></div></div> -->
+			</div>
+			<div id = "profile-intro">
+				<div id = "name-intro">
+					<!-- <div id = "hello" class = "name change-font">Hi there!</div> -->
+					<div id = "my-name" class = "name change-font">Varsha Alangar</div>
+					<div id = "tag-line" class = "definition change-font">Data Visualization, Front End Development</div>
+					<div id = "contact" class = "one-line-disp label">
+						<li><i class = "contact-icons fas fa-download"></i><a href="./pdfs/Alangar_Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé"><b>Download Résumé</b></a></li>
+						<li><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
+						<li><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
+						<li><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
+						<li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
+					</div>
+				</div>
+			</div>
+		</div>
         <div id = "main-container">
 			<div id = "main-bundle-shadow">
 				<div id = "main-bundle">
-					<div id = "profile" >
-						<div id = "profile-pic">
-							<img id = "logo" class = "logo"  src = "./images/va_logo.png"/>
-							<div id = "my-dp" class="hidden"><div class = "dp-img"></div></div>
-						</div>
-						<div id = "profile-intro">
-							<div id = "name-intro">
-								<!-- <div id = "hello" class = "name change-font">Hi there!</div> -->
-								<div id = "my-name" class = "name change-font">Varsha Alangar<div id = "pronounciation" class = "sub-name"><div class = "sub-title">( Pronounced:  </div>VARR-shuh AH-lung-garr )</div></div>
-								<div id = "tag-line" class = "definition change-font">Front End Visualization Developer adding color to code...</div>
-								<div id = "contact" class = "one-line-disp label">
-									<li><i class = "contact-icons fas fa-download"></i><a href="./pdfs/Alangar_Varsha_Résumé.pdf" download="Alangar,Varsha_Résumé"><b>Download Résumé</b></a></li>
-									<li><i class = "contact-icons fab fa-github"></i><a href="https://github.com/valangar"><b>GitHub</b></a></li>
-									<li><i class = "contact-icons fab fa-linkedin"></i><a href="https://www.linkedin.com/in/varshaalangar/"><b>LinkedIn</b></a></li>
-									<li><i class = "contact-icons far fa-envelope"></i><a href="mailto:varsha.alangar@gmail.com"><b>Varsha Alangar</b></a></li>
-									<li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
-								</div>
-							</div>
-						</div>
-					</div>
+					
 					<div id = "fixed-profile" class="hidden sticky">
 						<img id = "fixed-logo" class = "logo-small"  src = "./images/va_logo.png"/>
 						<div id = "fixed-my-name" class = "name-small">Varsha Alangar</div>
@@ -52,15 +53,13 @@
 							<li><i class = "contact-icons fab fa-twitter"></i><a href="https://twitter.com/varshalangar"><b>Twitter</b></a></li>
 						</div>
 					</div>
-					<br>
-					<br>
-					<img class="timeline" src="./images/bg/Overview.png">
+					<img class="timeline" src="./images/bg/Overview_2019.png">
 					<div id = "content-area">
 								<div class = "elevator-pitch">
-									I am a visualization developer working with <a href="https://www.acumenllc.com/" target="_blank">Acumen, LLC</a> in Burlingame, California for about 2 years.
+									I am a data analysis and front-end data visualization developer working with a not-for-profit health care policy analyses firm - The SPHERE Institute (<a href="https://www.acumenllc.com/" target="_blank">Acumen, LLC</a>) in Burlingame, California for about 3 years.
 									<br><br>
-									I enjoy designing visualizations and dashboard solutions and giving them life through the magic of JavaScript. 
-									<br>Before moving to California, I graduated with a Master of Science degree in Computing (Graphics and Visualization Track) from the <a href = "https://www.utah.edu/" target="_blank">University of Utah</a>. 
+									I enjoy designing visualizations and web applications to turn incoherent data into clear, compelling and exploratory solutions. 
+									<br>Before moving to California, I graduated with a Master of Science degree in Computing (<a href = "https://www.cs.utah.edu/graduate/" target="_blank">Graphics and Visualization Track</a>) from the <a href = "https://www.utah.edu/" target="_blank">University of Utah</a>. 
 									<br>My liking towards data viz stems from my desire to do two things I have always liked - Computer Science and Art. I like working with pixels and would happily spend hours on them.
 									<br>I gain inspiration from the works of <a href="https://bost.ocks.org/mike/" target="_blank">Mike Bostock</a>, <a href="https://www.visualcinnamon.com/" target="_blank">Nadieh Bremer</a>, <a href="http://alignedleft.com/" target="_blank">Scott Murray</a> and many others.
 									<br><br>
@@ -80,9 +79,12 @@
 										<div id = "html" class = "chip">HTML</div>
 										<div id = "css" class = "chip">CSS</div>
 										<div id = "d3" class = "chip">D3.js</div>
+										<div id = "svg" class = "chip">SVG</div>
 										<div id = "vue" class = "chip">Vue.js</div>
-										<div id = "json" class = "chip">JSON</div>
+										<div id = "json" class = "chip">JSON, TopoJSON</div>
 										<div id = "mvc" class = "chip">MVC Framework</div>
+										<div id = "nodejs" class = "chip">Node.js</div>
+										<div id = "webpack" class = "chip">Webpack</div>
 										<div id = "jquery" class = "chip">JQuery</div>
 										<div id = "python" class = "chip">Python</div>
 										<div id = "opengl" class = "chip">OpenGL</div>
@@ -95,6 +97,7 @@
 										<div id = "tableau" class = "chip">Tableau</div>
 										<div id = "ps" class = "chip">Adobe Photoshop</div>
 										<div id = "vsc" class = "chip">Visual Studio Code</div>
+										<div id = "visio" class = "chip">MS Visio, Moqups</div>
 									</div>
 								</div>
 								<div id = "work-container">
@@ -105,7 +108,7 @@
 										<div id = "reset-btn" class = "hidden">Remove filters</div>
 									</div>
 									<div class = "work-pg">
-										<div class="work-card js jquery html css d3 json mvc">
+										<div class="work-card js jquery html css d3 json mvc svg visio">
 											<div class = "img-wrap">
 												<div class = "img screenshot" id = "acumen-cm" ></div>
 												<a class="img-text-layer" href="https://valangar.github.io/acumen-projects/cba_project/index.html">
@@ -114,7 +117,7 @@
 											</div>
 											<div class="work-code-date-strip one-line-disp align-right"><a class="code-links"></a><div class="date">April, 2018</div></div>
 										</div>
-										<div class="work-card js jquery html css d3 json mvc">
+										<div class="work-card js jquery html css d3 json mvc svg">
 											<div class = "img-wrap">
 												<div class = "img screenshot" id = "acumen-hrsp" ></div>
 												<a class="img-text-layer" href="https://valangar.github.io/acumen-projects/hrsp_project/index.html" >
@@ -176,7 +179,7 @@
             </div>
         </div>
         <script src = "https://d3js.org/d3.v4.min.js"></script>
-        <script src = "https://code.jquery.com/jquery-3.1.0.js"></script>
+		<script src = "https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src = "./scripts/main.js"></script>
     </body>
 </html>

@@ -7,6 +7,7 @@ var logo = d3.selectAll("#logo"),
 	
 //Initial setup
 
+
 //Adding event listeners
 window.onscroll = function() {
 	let class_name = "sticky";
@@ -25,7 +26,7 @@ window.onscroll = function() {
 		fixed_container.classed("hidden", true);
 	}
 }
-d3.select("#profile-pic")
+/* d3.select("#profile-pic")
 	.on("mouseover", function(){
 		logo.classed("hidden", true);
 		my_dp.classed("hidden", false);
@@ -33,7 +34,7 @@ d3.select("#profile-pic")
 	.on("mouseout", function(){
 		logo.classed("hidden", false);
 		my_dp.classed("hidden", true);
-	});
+	}); */
 	
 d3.select("#skills-container").selectAll(".chip").on("click", function(d){
 	let is_clicked = d3.select(this).classed("chip-clicked"),

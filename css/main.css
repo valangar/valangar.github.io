@@ -11,6 +11,13 @@
 	--main-grey: #f4f4f4;
 	--main-grey-light: #f8f8f8;
 }
+circle {
+    fill: var(--main-teal);
+}
+#divider{
+    position: relative;
+    top: -170px;
+}
 .hidden {
     display: none !important;
 }
@@ -52,12 +59,13 @@ a{
     color: var(--main-teal);
 }
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: var(--main-black);
 }
 body {
+    background-color: var(--main-grey-light);
 }
 #main-container {
     width: 100%;
@@ -76,11 +84,11 @@ body {
 }
 #fixed-profile {
 	width: 1000px;
-    border-bottom: 0.1px solid silver;
+    box-shadow: 0px 4px 5px #8080802b;
     padding: 15px 0px;
     display: flex;
     align-items: center;
-    background-color: var(--main-grey-light);
+    background-color: #f2f2f2;
     z-index: 1000;
 }
 #fixed-logo {
@@ -95,20 +103,22 @@ body {
 #fixed-contact {
 }
 #profile {
-	display: flex;
-    padding-bottom: 20px;
-    background: linear-gradient( to left, #00808000 0%, #0080807d 12%, #008080 47%, #0080801f 100% ) left bottom #fff no-repeat;
-    background-size: 100% 1px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    /* background: linear-gradient( to left, #00808000 0%, #0080807d 12%, #008080 47%, #0080801f 100% ) left bottom #fff no-repeat; */
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 5px #8080802b;
 }
 #profile-pic {
-	width: 250px;
-	min-width: 250px;
-	max-width: 250px;
-    height: 250px;
+	width: 120px;
+	min-width: 120px;
+	max-width: 120px;
+    height: 120px;
 }
 #logo {
-    width: 250px;
-    height: 250px;
+    width: 120px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,6 +146,7 @@ body {
     transform: rotate(45deg);
 }
 #profile-intro {
+    width:450px;
 	padding-left: 20px;
 	display: flex;
     flex-direction: column;
@@ -148,7 +159,7 @@ body {
     font-size: 36px;
 }
 .name, .definition  { 
-    font-size: 52px;
+    font-size: 32px;
     font-weight: bold;
     text-shadow: 0px 1px 10px var(--main-grey);
     display: flex;
@@ -168,7 +179,7 @@ body {
     padding-right: 5px;
 }
 .definition {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: normal;
     padding: 10px 0px 20px 6px;
     color: var(--main-teal);
@@ -224,8 +235,8 @@ body {
 	font-size: 14px;
     color: var(--main-teal);
     padding: 10px;
-    background-color: var(--main-grey);
-    border-radius: 50px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
     margin: 0px 10px 10px 0px;
     cursor: pointer;
     transition: all 0.1s ease;
