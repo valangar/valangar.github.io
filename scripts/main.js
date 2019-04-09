@@ -4,6 +4,7 @@ var logo = d3.selectAll("#logo"),
 	contacts_container = document.getElementById("contact"),
 	init_offset = contacts_container.offsetTop,
 	fixed_container = d3.select("#fixed-profile");
+	title_container = d3.select("#profile");
 	
 //Initial setup
 
@@ -19,11 +20,13 @@ window.onscroll = function() {
 			contacts_container.className += " " + class_name;
 		}
 		fixed_container.classed("hidden", false);
+		title_container.classed("hidden", true);
 	}
 	else {
 		//contacts_container.classed("sticky", false); there's that IE9 compatibility issue again!
 		contacts_container.className = contacts_container.className.replace(/\bsticky\b/g, "");
 		fixed_container.classed("hidden", true);
+		title_container.classed("hidden", false);
 	}
 }
 /* d3.select("#profile-pic")

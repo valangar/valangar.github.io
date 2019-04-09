@@ -7,11 +7,18 @@
     --main-orange: #fbb03b;
 	--main-red: #f2738c;
     --main-black: #333;
-	--main-grey-dark: gainsboro;
+	--main-grey-dark: #aaaaaa;
 	--main-grey: #f4f4f4;
 	--main-grey-light: #f8f8f8;
 }
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--main-black);
+}
 body {
+    background-color: #e6e7e9;
     margin: 0px;
 }
 circle {
@@ -61,19 +68,12 @@ a{
     text-decoration: none;
     color: var(--main-teal);
 }
-html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    color: var(--main-black);
-}
-body {
-    background-color: var(--main-grey-light);
-}
 #main-container {
     width: 100%;
+    position: relative;
+    top: 200px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 #main-bundle-shadow{
 	width: 1040px;
@@ -106,6 +106,9 @@ body {
 #fixed-contact {
 }
 #profile {
+    width: 100%;
+    z-index: 99;
+    position: fixed;
     display: flex;
     justify-content: center;
     padding: 10px 0px;
@@ -211,7 +214,6 @@ body {
 #content-area {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     padding: 0px 25px;
 }
@@ -262,11 +264,12 @@ body {
 	background-color: teal;
 }
 .elevator-pitch, #work-container, #pub-container, #skills-container {
-	width: 100%;
-	margin-top: 20px;
+    margin-top: 20px;
 }
 #work-container .pg-title{
-	justify-content: space-between;
+    justify-content: space-between;
+    margin: 20px 20px 0px 20px;
+    padding: 0px 25px;
 }
 .pub-list {
 	font-size: 14px;
@@ -314,7 +317,7 @@ li {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 20px var(--main-grey-dark);
+    box-shadow: 0px 0px 5px #80808036;;
 	transition: all 0.1s ease;
 }
 .timeline{
@@ -322,6 +325,9 @@ li {
 }
 .work-code-date-strip {
     margin-top: 10px;
+}
+#acumen-doj {
+    background-image: url("../images/work/DOJ_Tool.PNG");
 }
 #acumen-own {
 	background-image: url("../images/work/ownership.png");
@@ -345,7 +351,7 @@ background-image: url("../images/work/ray_tracing_comp.jpg");
 background-image: url("../images/work/nlp_cropped.png");
 }
 #pshop{
-    background-image: url("../images/work/space.png");
+    background-image: url("../images/work/space_thumbnail.png");
     }
 .img-wrap {
     position: relative;
