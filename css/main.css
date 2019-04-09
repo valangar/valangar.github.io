@@ -11,6 +11,9 @@
 	--main-grey: #f4f4f4;
 	--main-grey-light: #f8f8f8;
 }
+body {
+    margin: 0px;
+}
 circle {
     fill: var(--main-teal);
 }
@@ -83,10 +86,10 @@ body {
 	margin: 20px;
 }
 #fixed-profile {
-	width: 1000px;
     box-shadow: 0px 4px 5px #8080802b;
     padding: 15px 0px;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
     z-index: 1000;
@@ -98,7 +101,7 @@ body {
 }
 #fixed-my-name {
 	width: 100px;
-    padding: 0px 158px 0px 10px;
+    padding: 0px 50px 0px 10px;
 }
 #fixed-contact {
 }
@@ -114,7 +117,10 @@ body {
 	width: 120px;
 	min-width: 120px;
 	max-width: 120px;
-    height: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #logo {
     width: 120px;
@@ -122,7 +128,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 #my-dp {
     position: relative;
@@ -195,6 +200,10 @@ body {
     padding: 0px 10px;
     font-size: large;
     color: var(--main-teal);
+    transition: 0.1s all;
+}
+.contact-icons:hover {
+    color: var(--main-orange);
 }
 #viz-area{
     
@@ -267,43 +276,12 @@ body {
 	font-size: 14px;
 }
 li {
-    overflow: hidden;
+    display: inline-block;
     list-style: none;
     white-space: nowrap;
     padding: 5px 5px 5px 5px;
     margin-right: 15px;
-    border-radius: 25px;
-    display: inline-block;
     font-size: 20px;
-}
-li a {
-	opacity: 0;
-    color: var(--main-teal);
-	max-width: 0;
-	display: inline-block;
-	text-decoration: none;
-	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color;
-}
-li:hover {
-	background-color: var(--main-grey);
-}
-li a b {
-	float:right;
-	display: block;
-	padding-right: 1em;
-	font:1em/1 'rokkitt', sans-serif;
-}
-li i {
-	color: var(--main-orange);
-	line-height:1;
-	font-size: 25px;
-	display: inline-block;
-	padding:.150em .400em;
-}
-li:hover a {
-	opacity: 1;
-	max-width: 200px;
-	transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
 }
 .work-title{
     width: 100%;
